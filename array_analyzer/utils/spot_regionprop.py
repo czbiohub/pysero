@@ -24,6 +24,9 @@ class SpotRegionprop:
         self.masked_image = None
 
     def assign_median_masked(self):
+        # try summation here
+        # self.median_intensity = np.sum(self.image[self.mask > 0])
+
         self.median_intensity = np.median(self.image[self.mask > 0])
         self.masked_image = self.image * self.mask
 

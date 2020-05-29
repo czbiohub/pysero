@@ -58,7 +58,7 @@ def build_centroid_binary_blocks(cent_list, image_, params_, return_type='region
         return target
 
 
-def get_spot_intensity(coords, im_int, background, params, search_range=2):
+def get_spot_intensity(coords, im_int, background, params, search_range=2.0):
     """
     Extract signal and background intensity at each spot given the spot coordinate
     with the following steps:
@@ -136,8 +136,13 @@ def get_spot_intensity(coords, im_int, background, params, search_range=2):
         bg_prop = regionprop.SpotRegionprop(
             label=label,
         )
+
         # Mask spot should cover a certain percentage of ROI
+        # set constant high to force "constant area" regionprop
+        constants.SPOT_MIN_PERCENT_AREA = 120
+
         if np.mean(mask_spot) > constants.SPOT_MIN_PERCENT_AREA:
+            print('==================using mask=================')
             # Mask detected
             bg_spot_lg, _ = img_processing.crop_image_at_center(
                 im=background,
