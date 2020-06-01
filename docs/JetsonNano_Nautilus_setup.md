@@ -1,5 +1,5 @@
 # Jetson Nano Full Setup for open-source ELISA 
-## "Cuttlefish"-- a SQUID derivative
+## "Nautilus"-- a SQUID derivative
 
 -----------------------------
 ## Overview:
@@ -11,7 +11,7 @@
 6. Clone octopi-platereader repository
 7. Install cuttlefish dependencies
 8. Install Galaxy Camera SDKs
-9. 
+ 
 -----------------------------
 ### 1. [Write ISO File and boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro "WriteIsoFile"):
 Follow the instructions in the link above to write the ISO file and boot the Jetson Nano.
@@ -36,14 +36,16 @@ Upgrade the Jetson Nano software before installing dependencies.
 
 ### 4. Install pip3
 1. `sudo apt-get install python3-pip`
+2. (Optional) [update pip](https://pip.pypa.io/en/stable/installing/#upgrading-pip "Upgrade pip"):
+	`pip3 install -U pip`
 
 ### 5. Create and activate virtual environment
-We prefer to install two virtual environments, one to control *Cuttlefish* and one to control the *Pysero* pipeline. 
+We prefer to install two virtual environments, one to control *Nautilus* and one to control the *Pysero* pipeline. 
 First, let us install the *Cuttlefish* environment.
 
 Following installation was tested on `4.9.140-tegra aarch64 GNU/Linux`.
 
-We use a python package manager to isolate the dependencies required for cuttlefish.
+We use a python package manager to isolate the dependencies required for nautilus.
 conda package manager is not directly supported by above version of Linux.
 Instead, pip virtual environment works well for package management.
 
@@ -52,16 +54,16 @@ Major steps in setup are:
     `sudo apt install -y python3-venv`
     
 2.	Create an environment: 
-    `python3 -m venv ~/python-envs/cuttlefish`
+    `python3 -m venv ~/python-envs/nautilus`
     
 3.	Activate environment: 
-    `source ~/python-envs/cuttlefish/bin/activate`
+    `source ~/python-envs/nautilus/bin/activate`
     
 4.	Deactivate environment: 
     `deactivate`
     
 5. Update pyenv.cfg to use system-wide packages:
-    `cd ~/python-envs/env/cuttlefish`
+    `cd ~/python-envs/nautilus`
     
     Use `nano pyvenv.cfg to` change:
     `include-system-site-packages = true` 
@@ -90,7 +92,7 @@ Download both the *Linux ARM SDK* and the *Linux Python SDK*. Extract the packag
 
 ### Install the ARM SDK first: 
 
-1. Installation command: "./Galaxy_camera.run"
+1. Installation command: `./Galaxy_camera.run`
 
 2. When you do not see any error message in the installation and the end shown as below, your installation is compelete.
 
@@ -132,18 +134,10 @@ Python3.5 gxipy installation
   
   (3) `sudo python3 setup.py install`
 
-4. Install numpy library
-
-  1) First method by pip:
-  
+4. Install numpy library  
      1) `sudo apt-get install python3-pip`
-  
-     2) `sudo pip3 install numpy`
-
-
-  
-
-
+     2) `sudo pip3 install cython`
+     3) `sudo pip3 install numpy`
 
 
 -------------------------
@@ -176,7 +170,7 @@ Major steps in setup are:
     `deactivate`
     
 5. Update pyenv.cfg to use system-wide packages:
-    `cd ~/python-envs/env/pysero`
+    `cd ~/python-envs/pysero`
     
     Use `nano pyvenv.cfg to` change:
     `include-system-site-packages = true` 
@@ -185,17 +179,21 @@ Major steps in setup are:
 Some packages need to be installed in local environment and some system-wide.
 Use `pip install -I` to install in the `pysero` site-packages folder, the environment will access the local pacakages first and then search for global packages.
 
-### install dependencies for python packages:
+### Install dependencies for python packages:
 
 scikit-image and scipy dependencies:
 
         sudo apt-get install python-dev libfreetype6-dev
-	sudo apt-get install libfontconfig1-dev libjpeg
+	sudo apt-get install libfontconfig1-dev libjpeg-dev
+	sudo apt-get install zlib1g-dev
 	sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
+
 	
-### install python packages:
+### Install python packages:
 	
 	
+	pip3 install -I wheel
+	pip3 install -I pillow
 	pip install -I scipy==1.1.0
 	# compilation of scipy can take >5 min.
 	pip install -I scikit-image 
@@ -203,7 +201,6 @@ scikit-image and scipy dependencies:
 	pip install -I matplotlib 
 	pip install -I pandas==0.24.0 
 	# compilation of pandas can take time.
-	pip install -I wheel
 	pip install -I certifi
 	pip install -I cycler
 	pip install -I kiwisolver
@@ -217,3 +214,6 @@ scikit-image and scipy dependencies:
 	pip install -I openpyxl
 	pip install -I xmltodict
 	pip install -I xlrd
+
+### Note: 
+I recommend installing these packages slowly and one by one. Sometimes it may be useful to use `sudo -H pip3 install...`. I also recommend doing them in this order.
