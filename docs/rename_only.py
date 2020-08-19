@@ -7,12 +7,12 @@ from Bryant updated by Marcus Forst
 
 import shutil, os
 # path to source data folder
-source = "G:\\.shortcut-targets-by-id\\1FHidlgj8aczP41QFyhJt6NPhLPeOLmo7\\ELISAarrayReader\\images_nautilus\\2020-06-24-COVID_June24_OJAssay_Plate9_images_655_2020-06-24 18-20-58.782514\\0"
+source = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0'
 # path to target data folder
-target = "G:\\.shortcut-targets-by-id\\1FHidlgj8aczP41QFyhJt6NPhLPeOLmo7\\ELISAarrayReader\\images_nautilus\\2020-06-24-COVID_June24_OJAssay_Plate9_images_655_2020-06-24 18-20-58.782514\\0 renamed"
+target = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed'
 files = os.listdir(source)
 letters = ['A','B','C','D','E','F','G','H']
-
+os.makedirs(target, exist_ok=True)
 for file in files:
     if not '.png' in file:
         continue

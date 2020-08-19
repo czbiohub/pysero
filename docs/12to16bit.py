@@ -10,9 +10,10 @@ import skimage
 from skimage import io
 from skimage import exposure
 import os
-
-SOURCE = "G:\\.shortcut-targets-by-id\\1FHidlgj8aczP41QFyhJt6NPhLPeOLmo7\\ELISAarrayReader\\images_nautilus\\2020-06-24-COVID_June24_OJAssay_Plate9_images_655_2020-06-24 18-26-58.173049\\0 renamed"
-TARGET = "G:\\.shortcut-targets-by-id\\1FHidlgj8aczP41QFyhJt6NPhLPeOLmo7\\ELISAarrayReader\\images_nautilus\\2020-06-24-COVID_June24_OJAssay_Plate9_images_655_2020-06-24 18-26-58.173049\\0 renamed 16bit"
+import cv2
+#%%
+SOURCE = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed'
+TARGET = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed_16bit'
 #filemap="C:\\Users\\gt8ma\\OneDrive\\Documents\\2019-2020 School Year\\BioHub\\2020-05-01-17-29-54-COVID_May1_JBassay_images\\cuttlefish_wellToFile_windows.xlsx"
 ROTATION_ANGLE = 0
 
@@ -22,25 +23,26 @@ them to the target directory.
 """
 def main():
     # Go to source directory
-    files = os.listdir(SOURCE)
+    filenames = os.listdir(SOURCE)
     # Sort the files, imperfect but better than nothing.
-    files.sort()
+    filenames.sort()
+    os.makedirs(TARGET, exist_ok=True)
     # Loop through files
-    for filename in files:
+    for filename in filenames:
         # Only loop through image files
-        if not ".png" in file:
+        if not ".png" in filename:
             continue
         print(filename)
         # Join the filepath for the source directory
-        file = os.path.join(SOURCE, filename)
+        src_path = os.path.join(SOURCE, filename)
         # Read in the file
-        img = io.imread(file)
+        img = io.imread(src_path)
         # Rescale the intensity
         img = exposure.rescale_intensity(img, in_range='uint12')
         # Switch directories and add the filename.
-        new_file = os.path.join(TARGET, file)
+        dst_path = os.path.join(TARGET, filename)
         # Save the file
-        io.imsave(new_file, img)
+        cv2.imwrite(dst_path, img)
         print("---------")
 
 
