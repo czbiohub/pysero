@@ -11,9 +11,10 @@ from skimage import io
 from skimage import exposure
 import os
 import cv2
+import numpy as np
 #%%
-SOURCE = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed'
-TARGET = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed_16bit'
+SOURCE = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_Plate11_2020-08-14 19-29-59.049679/0_renamed'
+TARGET = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_Plate11_2020-08-14 19-29-59.049679/0_renamed_16bit'
 #filemap="C:\\Users\\gt8ma\\OneDrive\\Documents\\2019-2020 School Year\\BioHub\\2020-05-01-17-29-54-COVID_May1_JBassay_images\\cuttlefish_wellToFile_windows.xlsx"
 ROTATION_ANGLE = 0
 
@@ -37,6 +38,8 @@ def main():
         src_path = os.path.join(SOURCE, filename)
         # Read in the file
         img = io.imread(src_path)
+        # Rotate by 180 degrees
+        img = np.rot90(img, k=2)
         # Rescale the intensity
         img = exposure.rescale_intensity(img, in_range='uint12')
         # Switch directories and add the filename.

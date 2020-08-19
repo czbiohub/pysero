@@ -7,9 +7,9 @@ from Bryant updated by Marcus Forst
 
 import shutil, os
 # path to source data folder
-source = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0'
+source = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_Plate11_2020-08-14 19-29-59.049679/0'
 # path to target data folder
-target = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_2020-08-14 19-29-59.049679/0_renamed'
+target = '/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_nautilus/2020-08-14-COVID_Aug14_OJ_Plate11_2020-08-14 19-29-59.049679/0_renamed'
 files = os.listdir(source)
 letters = ['A','B','C','D','E','F','G','H']
 os.makedirs(target, exist_ok=True)
