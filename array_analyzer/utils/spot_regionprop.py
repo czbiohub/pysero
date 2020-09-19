@@ -45,6 +45,7 @@ class SpotRegionprop:
         intensity_vals = self.image[self.mask > 0]
         self.spot_dict['intensity_mean'] = np.mean(intensity_vals)
         self.spot_dict['intensity_median'] = np.median(intensity_vals)
+        self.spot_dict['intensity_sum'] = np.sum(intensity_vals)
         bg_vals = self.background[self.mask > 0]
         self.spot_dict['bg_mean'] = np.mean(bg_vals)
         self.spot_dict['bg_median'] = np.median(bg_vals)

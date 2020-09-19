@@ -196,3 +196,4 @@ def plot_registration(image,
     fig_save = plt.gcf()
     fig_save.savefig(output_name + '_registration.png', bbox_inches='tight')
     plt.close(fig_save)
+

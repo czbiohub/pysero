@@ -201,10 +201,10 @@ def get_largest_component(spot_segm):
 
 
 def thresh_and_binarize(image,
-                        method='rosin',
+                        method='bright_spots', # JRB changed from 'rosin'
                         invert=True,
                         disk_size=10,
-                        thr_percent=95,
+                        thr_percent=95, #JRB may change this from 95
                         get_lcc=False):
     """
     receives greyscale np.ndarray image

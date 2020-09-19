@@ -59,7 +59,7 @@ def build_centroid_binary_blocks(cent_list, image_, params_, return_type='region
         return target
 
 
-def get_spot_intensity(coords, im, background, search_range=2):
+def get_spot_intensity(coords, im, background, search_range=5):
     """
     Extract signal and background intensity at each spot given the spot coordinate
     with the following steps:
@@ -87,7 +87,7 @@ def get_spot_intensity(coords, im, background, search_range=2):
     n_rows = constants.params['rows']
     n_cols = constants.params['columns']
     # make spot size always odd
-    spot_size = 2 * int(0.3 * spot_width / pix_size) + 1
+    spot_size = 2 * int(0.3 * spot_width / pix_size) + 1 # JRB changed this from "2 *"
     bbox_width = bbox_height = spot_size
     # Strel disk size for spot segmentation
     disk_size = int(np.rint(spot_size / 2.5))

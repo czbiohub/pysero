@@ -86,7 +86,7 @@ ANGLE_MEAN = 0.
 # Requirement of minimum number of detected spots
 MIN_NBR_SPOTS = 5
 # Minimum detected spot percentage of spot ROI area
-SPOT_MIN_PERCENT_AREA = .1
+SPOT_MIN_PERCENT_AREA = 0 # JRB changed from .1
 
 # constants for saving
 RUN_PATH = ''
