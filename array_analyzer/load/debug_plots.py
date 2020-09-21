@@ -218,14 +218,13 @@ def plot_comet(spots_df,
             comet_well[r, c] = df_row['comet_status']
 
     plt.figure(figsize=(6, 1.5))
-    plt.subplot(131)
     plt.imshow(comet_well, cmap='gray')
     plt.colorbar()
     plt.title('comets')
 
 
     figcomet = plt.gcf()
-    fig_debug = output_name + '_comet.png'
+    comet_debug = output_name + '_comet.png'
     figcomet.savefig(comet_debug)
     plt.close(figcomet)
 

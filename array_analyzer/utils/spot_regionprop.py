@@ -47,10 +47,6 @@ class SpotRegionprop:
         self.spot_dict['intensity_median'] = np.median(intensity_vals)
         self.spot_dict['intensity_sum'] = np.sum(intensity_vals)
 
-        # eccentricity = self.mask > 0.5
-        # props = select_props(props, attribute="eccentricity", condition="less_than", condition_value=0.5)
-        # self.spot_dict['comet_status'] = ec # JRB is messing with this
-
         bg_vals = self.background[self.mask > 0]
         self.spot_dict['bg_mean'] = np.mean(bg_vals)
         self.spot_dict['bg_median'] = np.median(bg_vals)
@@ -97,7 +93,7 @@ class SpotRegionprop:
         :param list bbox: Bounding box of single spot image
         """
         properties = ('label', 'centroid', 'mean_intensity',
-                      'intensity_image', 'image', 'area', 'bbox')
+                      'intensity_image', 'image', 'area', 'bbox', 'eccentricity') # JRB added eccentricity
         skimage_props = measure.regionprops_table(
             mask,
             intensity_image=image,
@@ -122,5 +118,10 @@ class SpotRegionprop:
         self.background = background[min_row:max_row, min_col:max_col]
         self.mask = mask[min_row:max_row, min_col:max_col]
         self.masked_image = self.image * self.mask
+
+        if (skimage_props['eccentricity'] > 0.5).bool():
+            self.spot_dict['comet_status'] = 0
+        else:
+            self.spot_dict['comet_status'] = 255
 
         self.compute_stats()
