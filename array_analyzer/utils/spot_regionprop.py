@@ -46,6 +46,11 @@ class SpotRegionprop:
         self.spot_dict['intensity_mean'] = np.mean(intensity_vals)
         self.spot_dict['intensity_median'] = np.median(intensity_vals)
         self.spot_dict['intensity_sum'] = np.sum(intensity_vals)
+
+        # eccentricity = self.mask > 0.5
+        # props = select_props(props, attribute="eccentricity", condition="less_than", condition_value=0.5)
+        # self.spot_dict['comet_status'] = ec # JRB is messing with this
+
         bg_vals = self.background[self.mask > 0]
         self.spot_dict['bg_mean'] = np.mean(bg_vals)
         self.spot_dict['bg_median'] = np.median(bg_vals)

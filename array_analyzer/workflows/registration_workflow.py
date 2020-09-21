@@ -198,6 +198,12 @@ def point_registration(input_dir, output_dir):
                 output_name=output_name,
                 max_intensity=max_intensity,
             )
+            debug_plots.plot_comet(
+                spots_df=spots_df,
+                 nbr_grid_rows=nbr_grid_rows,
+                 nbr_grid_cols=nbr_grid_cols,
+                 output_name=output_name)
+
             logger.debug("Time to save debug images: {:.3f} s".format(
                 time.time() - start_time),
             )

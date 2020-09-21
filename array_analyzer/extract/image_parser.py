@@ -156,7 +156,7 @@ def generate_props(mask,
                    intensity_image=None,
                    dataframe=False,
                    properties=('label', 'centroid', 'mean_intensity',
-                    'intensity_image', 'image', 'area', 'bbox')):
+                    'intensity_image', 'image', 'area', 'bbox', 'eccentricity')):
     """
     converts binarized image into a list of region-properties using scikit-image
         first generates labels for the cleaned (binary_closing) binary image

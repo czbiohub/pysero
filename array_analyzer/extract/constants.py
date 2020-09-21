@@ -49,7 +49,8 @@ SPOT_DF_COLS = ['grid_row',
                 'bbox_row_min',
                 'bbox_row_max',
                 'bbox_col_min',
-                'bbox_col_max'
+                'bbox_col_max',
+                'comet_status' #JRB added
                 ]
 
 # === array-constants ===

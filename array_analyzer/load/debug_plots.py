@@ -197,3 +197,35 @@ def plot_registration(image,
     fig_save.savefig(output_name + '_registration.png', bbox_inches='tight')
     plt.close(fig_save)
 
+def plot_comet(spots_df,
+            nbr_grid_rows,
+            nbr_grid_cols,
+            output_name):
+    """
+    Collect comet values for each spot and place
+    values in grid shaped array.
+
+    :param pd.DataFrame spots_df: Stats for each spot in grid
+    :param int nbr_grid_rows: Number of grid rows
+    :param int nbr_grid_cols: Number of grid columns
+    :param str output_name: Path to image to be written minus exension
+    """
+    comet_well = np.empty((nbr_grid_rows, nbr_grid_cols))
+
+    for r in np.arange(nbr_grid_rows):
+        for c in np.arange(nbr_grid_cols):
+            df_row = spots_df[(spots_df['grid_row'] == r) & (spots_df['grid_col'] == c)]
+            comet_well[r, c] = df_row['comet_status']
+
+    plt.figure(figsize=(6, 1.5))
+    plt.subplot(131)
+    plt.imshow(comet_well, cmap='gray')
+    plt.colorbar()
+    plt.title('comets')
+
+
+    figcomet = plt.gcf()
+    fig_debug = output_name + '_comet.png'
+    figcomet.savefig(comet_debug)
+    plt.close(figcomet)
+

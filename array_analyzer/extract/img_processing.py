@@ -204,7 +204,7 @@ def thresh_and_binarize(image,
                         method='bright_spots', # JRB changed from 'rosin'
                         invert=True,
                         disk_size=10,
-                        thr_percent=95, #JRB may change this from 95
+                        thr_percent=95,
                         get_lcc=False):
     """
     receives greyscale np.ndarray image

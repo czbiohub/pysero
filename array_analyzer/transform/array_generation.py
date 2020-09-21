@@ -87,7 +87,7 @@ def get_spot_intensity(coords, im, background, search_range=5):
     n_rows = constants.params['rows']
     n_cols = constants.params['columns']
     # make spot size always odd
-    spot_size = 2 * int(0.3 * spot_width / pix_size) + 1 # JRB changed this from "2 *"
+    spot_size = 2 * int(0.3 * spot_width / pix_size) + 1
     bbox_width = bbox_height = spot_size
     # Strel disk size for spot segmentation
     disk_size = int(np.rint(spot_size / 2.5))
@@ -116,6 +116,7 @@ def get_spot_intensity(coords, im, background, search_range=5):
             thr_percent=75,
             get_lcc=True,
         )
+
         # Create spot and background instance
         spot_prop = regionprop.SpotRegionprop(
             row_idx=row_idx,
