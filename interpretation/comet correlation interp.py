@@ -65,42 +65,42 @@ statsperwell_path = os.path.join(data_folder1, 'stats_per_well 1.xlsx')
 
 
 
-
-# %% Read antigen and plate info
-sheet_names = ['serum ID','serum ID1',
-               'serum cat',
-               'serum dilution','serum dilution2',
-               'serum type',
-               'secondary ID',
-               'secondary dilution']
-plate_info_df = pd.DataFrame()
-with pd.ExcelFile(metadata_path1) as metadata_xlsx:
-    # get sheet names that are available in metadata
-    sheet_names = list(set(metadata_xlsx.sheet_names).intersection(sheet_names))
-    for sheet_name in sheet_names:
-        sheet_df = pd.read_excel(metadata_path1, sheet_name=sheet_name, index_col=0)
-        sheet_df = sheet_df.unstack().reset_index(name=sheet_name)  # unpivot (linearize) the table
-        sheet_df.rename(columns={'level_1': 'row_id', 'level_0': 'col_id'}, inplace=True)
-        if plate_info_df.empty:
-            plate_info_df = sheet_df
-        else:
-            plate_info_df = pd.merge(plate_info_df,
-                                     sheet_df,
-                                     how='left', on=['row_id', 'col_id'])
-plate_info_df['well_id'] = plate_info_df.row_id + plate_info_df.col_id.map(str)
-sheet_names.append('well_id')
-# convert to number and non-numeric to NaN
-plate_info_df['serum dilution'] = \
-    plate_info_df['serum dilution'].apply(pd.to_numeric, errors='coerce')
-plate_info_df.dropna(inplace=True)
-# %%
-if np.all(plate_info_df['serum dilution'] >= 1):
-    # convert dilution to concentration
-    plate_info_df['serum dilution'] = 1 / plate_info_df['serum dilution']
-plate_info_df.drop(['row_id', 'col_id'], axis=1, inplace=True)
-
-# %% Read antigen information.
-antigen_df = antigen2D_to_df1D(xlsx_path=metadata_path1, sheet='antigen_array', data_col='antigen')
+#
+# # %% Read antigen and plate info
+# sheet_names = ['serum ID','serum ID1',
+#                'serum cat',
+#                'serum dilution','serum dilution2',
+#                'serum type',
+#                'secondary ID',
+#                'secondary dilution']
+# plate_info_df = pd.DataFrame()
+# with pd.ExcelFile(metadata_path1) as metadata_xlsx:
+#     # get sheet names that are available in metadata
+#     sheet_names = list(set(metadata_xlsx.sheet_names).intersection(sheet_names))
+#     for sheet_name in sheet_names:
+#         sheet_df = pd.read_excel(metadata_path1, sheet_name=sheet_name, index_col=0)
+#         sheet_df = sheet_df.unstack().reset_index(name=sheet_name)  # unpivot (linearize) the table
+#         sheet_df.rename(columns={'level_1': 'row_id', 'level_0': 'col_id'}, inplace=True)
+#         if plate_info_df.empty:
+#             plate_info_df = sheet_df
+#         else:
+#             plate_info_df = pd.merge(plate_info_df,
+#                                      sheet_df,
+#                                      how='left', on=['row_id', 'col_id'])
+# plate_info_df['well_id'] = plate_info_df.row_id + plate_info_df.col_id.map(str)
+# sheet_names.append('well_id')
+# # convert to number and non-numeric to NaN
+# plate_info_df['serum dilution'] = \
+#     plate_info_df['serum dilution'].apply(pd.to_numeric, errors='coerce')
+# plate_info_df.dropna(inplace=True)
+# # %%
+# if np.all(plate_info_df['serum dilution'] >= 1):
+#     # convert dilution to concentration
+#     plate_info_df['serum dilution'] = 1 / plate_info_df['serum dilution']
+# plate_info_df.drop(['row_id', 'col_id'], axis=1, inplace=True)
+#
+# # %% Read antigen information.
+# antigen_df = antigen2D_to_df1D(xlsx_path=metadata_path1, sheet='antigen_array', data_col='antigen')
 
 # %% Read intensity sum from pysero
 stats_xlsx = pd.ExcelFile(statsperwell_path)
@@ -112,34 +112,34 @@ statsperwell_df = pd.concat([pd.read_excel(stats_xlsx, sheet_name=s)
 # %% Plots
 
 # I'm trying to plot just one antigen from one well initially
-
-well_list = ['A1']
-antigen = ['SARS CoV2 RBD 500']
-A1data_df = statsperwell_df[(statsperwell_df['sheet_name'].isin(well_list)) & (statsperwell_df['antigen'].isin(antigen))]
-
-from itertools import combinations
-for index in list(combinations(A1data_df.index,2)):
-    subdf = (A1data_df.loc[index,:])
-    if subdf.isin({'comet_status':[0]}):
-        paircomet = ['yes']
-        subdf['Pair Comet']=paircomet
-    else:
-        paircomet =['no']
-        subdf['Pair Comet'] = paircomet
-
-
-fig_path = os.path.join(data_folder1, 'comet plots')
-os.makedirs(fig_path, exist_ok=True)
-
-well_list = ['A1']
-antigen = ['SARS CoV2 RBD 500']
-markers = 'o'
-hue = 'comet_status'
-
-A1data_df = statsperwell_df[(statsperwell_df['sheet_name'].isin(well_list)) & (statsperwell_df['antigen'].isin(antigen))]
-palette = sns.color_palette()
-
-g = sns.scatterplot(x="intensity_sum", y="od_norm", hue=hue, palette=palette, data=A1data_df)
+#
+# well_list = ['A1']
+# antigen = ['SARS CoV2 RBD 500']
+# A1data_df = statsperwell_df[(statsperwell_df['sheet_name'].isin(well_list)) & (statsperwell_df['antigen'].isin(antigen))]
+#
+# from itertools import combinations
+# for index in list(combinations(A1data_df.index,2)):
+#     subdf = (A1data_df.loc[index,:])
+#     if subdf.isin({'comet_status':[0]}):
+#         paircomet = ['yes']
+#         subdf['Pair Comet']=paircomet
+#     else:
+#         paircomet =['no']
+#         subdf['Pair Comet'] = paircomet
+#
+#
+# fig_path = os.path.join(data_folder1, 'comet plots')
+# os.makedirs(fig_path, exist_ok=True)
+#
+# well_list = ['A1']
+# antigen = ['SARS CoV2 RBD 500']
+# markers = 'o'
+# hue = 'comet_status'
+#
+# A1data_df = statsperwell_df[(statsperwell_df['sheet_name'].isin(well_list)) & (statsperwell_df['antigen'].isin(antigen))]
+# palette = sns.color_palette()
+#
+# g = sns.scatterplot(x="intensity_sum", y="od_norm", hue=hue, palette=palette, data=A1data_df)
 
 
     # for antigen, ax in zip(antigens, g.axes.flat):
@@ -159,4 +159,54 @@ g = sns.scatterplot(x="intensity_sum", y="od_norm", hue=hue, palette=palette, da
 
 
         # ax.set(ylim=[-0.05, 1.5])
-plt.savefig(os.path.join(fig_path, '{}_{}_{}_fit.jpg'.format('cometplottest', antigen, well_list)),dpi=300, bbox_inches='tight')
+# plt.savefig(os.path.join(fig_path, '{}_{}_{}_fit.jpg'.format('cometplottest', antigen, well_list)),dpi=300, bbox_inches='tight')
+# %% scatterplot per antigen showing od_norm vs intensity sum
+
+fig_path = os.path.join(data_folder1, 'comet plots')
+os.makedirs(fig_path, exist_ok=True)
+palette = "muted"
+hue = "sheet_name"
+
+
+antigens = natsorted(statsperwell_df['antigen'].unique())
+# serum_df = statsperwell_df[statsperwell_df['sheet_name'].unique()]
+# g = sns.lmplot(x="od_norm", y="intensity_sum", col_order=antigens,
+#                hue=hue, col="antigen", palette=palette,
+#                data=statsperwell_df, col_wrap=5, fit_reg=False)
+# for antigen, ax in zip(antigens, g.axes.flat):
+#     sub_df = statsperwell_df[(statsperwell_df['antigen'] == antigen)]
+#     sns.relplot(x="od_norm", y="intensity_sum", hue=hue, size="comet_status", sizes=(400, 40), alpha=.5,
+#                     palette="muted", data=sub_df, ax=ax, legend=False, col="antigen")
+
+# sub_df = statsperwell_df[(statsperwell_df['antigen'] == antigen)]
+sns.relplot(x="od_norm", y="intensity_sum", hue=hue, size="comet_status", sizes=(400, 40), alpha=.5,
+                    palette="muted", data=statsperwell_df, legend=False, col="antigen", col_wrap = 5)
+
+
+plt.savefig(os.path.join(fig_path, '{}_{}_{}_fit.jpg'.format('comet all Ag', 'OD', 'Intensity')),dpi=300, bbox_inches='tight')
+
+# %%====================
+well_list = ['A2', 'G1','G3']
+
+fig_path = os.path.join(data_folder1, 'comet plots')
+os.makedirs(fig_path, exist_ok=True)
+palette = "muted"
+hue = "sheet_name"
+
+antigens = natsorted(statsperwell_df['antigen'].unique())
+A2data_df = statsperwell_df[(statsperwell_df['sheet_name'].isin(well_list)) & (statsperwell_df['antigen'].isin(antigens))]
+# serum_df = statsperwell_df[statsperwell_df['sheet_name'].unique()]
+# g = sns.lmplot(x="od_norm", y="intensity_sum", col_order=antigens,
+#                hue=hue, col="antigen", palette=palette,
+#                data=statsperwell_df, col_wrap=5, fit_reg=False)
+# for antigen, ax in zip(antigens, g.axes.flat):
+#     sub_df = statsperwell_df[(statsperwell_df['antigen'] == antigen)]
+#     sns.relplot(x="od_norm", y="intensity_sum", hue=hue, size="comet_status", sizes=(400, 40), alpha=.5,
+#                     palette="muted", data=sub_df, ax=ax, legend=False, col="antigen")
+
+# sub_df = statsperwell_df[(statsperwell_df['antigen'] == antigen)]
+sns.relplot(x="od_norm", y="intensity_sum", hue=hue, size="comet_status", sizes=(400, 40), alpha=.5,
+                    palette="muted", data=A2data_df, legend=False, col="antigen", col_wrap = 5)
+
+
+plt.savefig(os.path.join(fig_path, '{}_{}_{}_fit.jpg'.format(well_list, 'OD', 'Intensity')),dpi=300, bbox_inches='tight')
