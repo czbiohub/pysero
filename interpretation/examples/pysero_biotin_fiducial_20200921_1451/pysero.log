@@ -1,0 +1,879 @@
+2020-09-21 14:51:26,844 - pysero.log - INFO - input dir: /Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_scienion/2020-08-14-18-24-59-COVID_August14_OJassay_plate11_images/biotin_fiducial
+2020-09-21 14:51:26,844 - pysero.log - INFO - output dir: /Users/janie.byrum/Desktop/comet segmentation test/For figure
+2020-09-21 14:51:26,844 - pysero.log - INFO - run dir: /Users/janie.byrum/Desktop/comet segmentation test/For figure/pysero_biotin_fiducial_20200921_1451
+2020-09-21 14:51:30,499 - pysero.log - INFO - Extracting well: A1
+2020-09-21 14:51:30,500 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:32,237 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:51:32,385 - pysero.log - DEBUG - Iteration: 0 min dist: 175.55239868164062
+2020-09-21 14:51:32,505 - pysero.log - DEBUG - Iteration: 1 min dist: 407.6878967285156
+2020-09-21 14:51:32,624 - pysero.log - DEBUG - Iteration: 2 min dist: 506.0317687988281
+2020-09-21 14:51:32,740 - pysero.log - DEBUG - Iteration: 3 min dist: 200.7200469970703
+2020-09-21 14:51:32,860 - pysero.log - DEBUG - Iteration: 4 min dist: 24.875871658325195
+2020-09-21 14:51:32,980 - pysero.log - DEBUG - Iteration: 5 min dist: 19.041629791259766
+2020-09-21 14:51:33,099 - pysero.log - DEBUG - Iteration: 6 min dist: 6.136427402496338
+2020-09-21 14:51:33,221 - pysero.log - DEBUG - Iteration: 7 min dist: 2.8331613540649414
+2020-09-21 14:51:33,346 - pysero.log - DEBUG - Iteration: 8 min dist: 2.643275260925293
+2020-09-21 14:51:33,466 - pysero.log - DEBUG - Iteration: 9 min dist: 2.625084400177002
+2020-09-21 14:51:33,466 - pysero.log - INFO - Particle filter min dist: 0.5250168800354004
+2020-09-21 14:51:33,466 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:51:34,982 - pysero.log - DEBUG - Assigned well A1 to plate reports
+2020-09-21 14:51:34,983 - pysero.log - INFO - Time to extract OD in A1: 4.585 s
+2020-09-21 14:51:35,706 - pysero.log - DEBUG - Time to save debug images: 0.723 s
+2020-09-21 14:51:35,784 - pysero.log - INFO - Extracting well: A2
+2020-09-21 14:51:35,784 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:37,552 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:51:37,709 - pysero.log - DEBUG - Iteration: 0 min dist: 49.125404357910156
+2020-09-21 14:51:37,851 - pysero.log - DEBUG - Iteration: 1 min dist: 288.5654296875
+2020-09-21 14:51:37,993 - pysero.log - DEBUG - Iteration: 2 min dist: 42.005096435546875
+2020-09-21 14:51:38,131 - pysero.log - DEBUG - Iteration: 3 min dist: 10.604618072509766
+2020-09-21 14:51:38,269 - pysero.log - DEBUG - Iteration: 4 min dist: 7.301351070404053
+2020-09-21 14:51:38,405 - pysero.log - DEBUG - Iteration: 5 min dist: 19.15630531311035
+2020-09-21 14:51:38,540 - pysero.log - DEBUG - Iteration: 6 min dist: 3.2399113178253174
+2020-09-21 14:51:38,679 - pysero.log - DEBUG - Iteration: 7 min dist: 2.328740358352661
+2020-09-21 14:51:38,818 - pysero.log - DEBUG - Iteration: 8 min dist: 1.934667944908142
+2020-09-21 14:51:38,958 - pysero.log - DEBUG - Iteration: 9 min dist: 1.935112714767456
+2020-09-21 14:51:38,958 - pysero.log - INFO - Particle filter min dist: 0.3870225429534912
+2020-09-21 14:51:38,958 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:51:40,485 - pysero.log - DEBUG - Assigned well A2 to plate reports
+2020-09-21 14:51:40,485 - pysero.log - INFO - Time to extract OD in A2: 4.779 s
+2020-09-21 14:51:41,175 - pysero.log - DEBUG - Time to save debug images: 0.689 s
+2020-09-21 14:51:41,267 - pysero.log - INFO - Extracting well: A3
+2020-09-21 14:51:41,267 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:43,095 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:51:43,243 - pysero.log - DEBUG - Iteration: 0 min dist: 113.60014343261719
+2020-09-21 14:51:43,376 - pysero.log - DEBUG - Iteration: 1 min dist: 229.95516967773438
+2020-09-21 14:51:43,522 - pysero.log - DEBUG - Iteration: 2 min dist: 218.6508026123047
+2020-09-21 14:51:43,668 - pysero.log - DEBUG - Iteration: 3 min dist: 158.88174438476562
+2020-09-21 14:51:43,818 - pysero.log - DEBUG - Iteration: 4 min dist: 112.21224975585938
+2020-09-21 14:51:43,970 - pysero.log - DEBUG - Iteration: 5 min dist: 22.563322067260742
+2020-09-21 14:51:44,120 - pysero.log - DEBUG - Iteration: 6 min dist: 11.476516723632812
+2020-09-21 14:51:44,273 - pysero.log - DEBUG - Iteration: 7 min dist: 8.7161865234375
+2020-09-21 14:51:44,426 - pysero.log - DEBUG - Iteration: 8 min dist: 8.547926902770996
+2020-09-21 14:51:44,582 - pysero.log - DEBUG - Iteration: 9 min dist: 8.523595809936523
+2020-09-21 14:51:44,582 - pysero.log - INFO - Particle filter min dist: 1.7047191619873048
+2020-09-21 14:51:44,583 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:51:46,146 - pysero.log - DEBUG - Assigned well A3 to plate reports
+2020-09-21 14:51:46,146 - pysero.log - INFO - Time to extract OD in A3: 4.971 s
+2020-09-21 14:51:46,919 - pysero.log - DEBUG - Time to save debug images: 0.773 s
+2020-09-21 14:51:47,005 - pysero.log - INFO - Extracting well: A4
+2020-09-21 14:51:47,005 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:48,846 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:51:49,026 - pysero.log - DEBUG - Iteration: 0 min dist: 197.51397705078125
+2020-09-21 14:51:49,180 - pysero.log - DEBUG - Iteration: 1 min dist: 196.5406494140625
+2020-09-21 14:51:49,322 - pysero.log - DEBUG - Iteration: 2 min dist: 132.72010803222656
+2020-09-21 14:51:49,470 - pysero.log - DEBUG - Iteration: 3 min dist: 173.3883056640625
+2020-09-21 14:51:49,612 - pysero.log - DEBUG - Iteration: 4 min dist: 91.70454406738281
+2020-09-21 14:51:49,750 - pysero.log - DEBUG - Iteration: 5 min dist: 57.35199737548828
+2020-09-21 14:51:49,880 - pysero.log - DEBUG - Iteration: 6 min dist: 47.35841751098633
+2020-09-21 14:51:50,014 - pysero.log - DEBUG - Iteration: 7 min dist: 43.92551040649414
+2020-09-21 14:51:50,148 - pysero.log - DEBUG - Iteration: 8 min dist: 43.47158432006836
+2020-09-21 14:51:50,282 - pysero.log - DEBUG - Iteration: 9 min dist: 43.34004592895508
+2020-09-21 14:51:50,418 - pysero.log - DEBUG - Iteration: 10 min dist: 43.31824493408203
+2020-09-21 14:51:50,418 - pysero.log - INFO - Particle filter min dist: 8.663648986816407
+2020-09-21 14:51:50,419 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:51:51,974 - pysero.log - DEBUG - Assigned well A4 to plate reports
+2020-09-21 14:51:51,975 - pysero.log - INFO - Time to extract OD in A4: 5.055 s
+2020-09-21 14:51:52,684 - pysero.log - DEBUG - Time to save debug images: 0.709 s
+2020-09-21 14:51:52,770 - pysero.log - INFO - Extracting well: A5
+2020-09-21 14:51:52,770 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:54,605 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:51:54,744 - pysero.log - DEBUG - Iteration: 0 min dist: 65.30581665039062
+2020-09-21 14:51:54,863 - pysero.log - DEBUG - Iteration: 1 min dist: 430.592529296875
+2020-09-21 14:51:54,983 - pysero.log - DEBUG - Iteration: 2 min dist: 252.83168029785156
+2020-09-21 14:51:55,102 - pysero.log - DEBUG - Iteration: 3 min dist: 54.825965881347656
+2020-09-21 14:51:55,218 - pysero.log - DEBUG - Iteration: 4 min dist: 32.798988342285156
+2020-09-21 14:51:55,333 - pysero.log - DEBUG - Iteration: 5 min dist: 27.668567657470703
+2020-09-21 14:51:55,455 - pysero.log - DEBUG - Iteration: 6 min dist: 4.666074752807617
+2020-09-21 14:51:55,575 - pysero.log - DEBUG - Iteration: 7 min dist: 3.0016703605651855
+2020-09-21 14:51:55,693 - pysero.log - DEBUG - Iteration: 8 min dist: 2.769641399383545
+2020-09-21 14:51:55,811 - pysero.log - DEBUG - Iteration: 9 min dist: 2.7484846115112305
+2020-09-21 14:51:55,812 - pysero.log - INFO - Particle filter min dist: 0.5496969223022461
+2020-09-21 14:51:55,812 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:51:57,362 - pysero.log - DEBUG - Assigned well A5 to plate reports
+2020-09-21 14:51:57,363 - pysero.log - INFO - Time to extract OD in A5: 4.678 s
+2020-09-21 14:51:58,046 - pysero.log - DEBUG - Time to save debug images: 0.683 s
+2020-09-21 14:51:58,128 - pysero.log - INFO - Extracting well: A6
+2020-09-21 14:51:58,129 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:51:59,920 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:00,082 - pysero.log - DEBUG - Iteration: 0 min dist: 149.5731201171875
+2020-09-21 14:52:00,213 - pysero.log - DEBUG - Iteration: 1 min dist: 321.46112060546875
+2020-09-21 14:52:00,347 - pysero.log - DEBUG - Iteration: 2 min dist: 358.3408203125
+2020-09-21 14:52:00,482 - pysero.log - DEBUG - Iteration: 3 min dist: 183.543701171875
+2020-09-21 14:52:00,614 - pysero.log - DEBUG - Iteration: 4 min dist: 49.028602600097656
+2020-09-21 14:52:00,748 - pysero.log - DEBUG - Iteration: 5 min dist: 13.458320617675781
+2020-09-21 14:52:00,881 - pysero.log - DEBUG - Iteration: 6 min dist: 5.15313720703125
+2020-09-21 14:52:01,009 - pysero.log - DEBUG - Iteration: 7 min dist: 4.833179950714111
+2020-09-21 14:52:01,137 - pysero.log - DEBUG - Iteration: 8 min dist: 4.189732074737549
+2020-09-21 14:52:01,263 - pysero.log - DEBUG - Iteration: 9 min dist: 3.924757719039917
+2020-09-21 14:52:01,394 - pysero.log - DEBUG - Iteration: 10 min dist: 3.9075393676757812
+2020-09-21 14:52:01,394 - pysero.log - INFO - Particle filter min dist: 0.7815078735351563
+2020-09-21 14:52:01,394 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:02,904 - pysero.log - DEBUG - Assigned well A6 to plate reports
+2020-09-21 14:52:02,905 - pysero.log - INFO - Time to extract OD in A6: 4.858 s
+2020-09-21 14:52:03,689 - pysero.log - DEBUG - Time to save debug images: 0.785 s
+2020-09-21 14:52:03,771 - pysero.log - INFO - Extracting well: A7 (1)
+2020-09-21 14:52:03,771 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:05,532 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:05,688 - pysero.log - DEBUG - Iteration: 0 min dist: 210.65423583984375
+2020-09-21 14:52:05,816 - pysero.log - DEBUG - Iteration: 1 min dist: 294.20672607421875
+2020-09-21 14:52:05,943 - pysero.log - DEBUG - Iteration: 2 min dist: 311.08599853515625
+2020-09-21 14:52:06,072 - pysero.log - DEBUG - Iteration: 3 min dist: 210.9080352783203
+2020-09-21 14:52:06,196 - pysero.log - DEBUG - Iteration: 4 min dist: 213.7904815673828
+2020-09-21 14:52:06,318 - pysero.log - DEBUG - Iteration: 5 min dist: 180.14199829101562
+2020-09-21 14:52:06,441 - pysero.log - DEBUG - Iteration: 6 min dist: 145.66534423828125
+2020-09-21 14:52:06,562 - pysero.log - DEBUG - Iteration: 7 min dist: 147.23095703125
+2020-09-21 14:52:06,685 - pysero.log - DEBUG - Iteration: 8 min dist: 147.01998901367188
+2020-09-21 14:52:06,806 - pysero.log - DEBUG - Iteration: 9 min dist: 146.7670440673828
+2020-09-21 14:52:06,930 - pysero.log - DEBUG - Iteration: 10 min dist: 146.7636260986328
+2020-09-21 14:52:06,930 - pysero.log - INFO - Particle filter min dist: 29.352725219726562
+2020-09-21 14:52:06,930 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:08,538 - pysero.log - DEBUG - Assigned well A7 (1) to plate reports
+2020-09-21 14:52:08,538 - pysero.log - INFO - Time to extract OD in A7 (1): 4.849 s
+2020-09-21 14:52:09,248 - pysero.log - DEBUG - Time to save debug images: 0.710 s
+2020-09-21 14:52:09,329 - pysero.log - INFO - Extracting well: A7
+2020-09-21 14:52:09,329 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:11,088 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:11,238 - pysero.log - DEBUG - Iteration: 0 min dist: 280.2118225097656
+2020-09-21 14:52:11,369 - pysero.log - DEBUG - Iteration: 1 min dist: 380.37908935546875
+2020-09-21 14:52:11,499 - pysero.log - DEBUG - Iteration: 2 min dist: 501.4925231933594
+2020-09-21 14:52:11,625 - pysero.log - DEBUG - Iteration: 3 min dist: 316.8880615234375
+2020-09-21 14:52:11,748 - pysero.log - DEBUG - Iteration: 4 min dist: 228.16976928710938
+2020-09-21 14:52:11,873 - pysero.log - DEBUG - Iteration: 5 min dist: 154.10125732421875
+2020-09-21 14:52:11,996 - pysero.log - DEBUG - Iteration: 6 min dist: 150.08074951171875
+2020-09-21 14:52:12,117 - pysero.log - DEBUG - Iteration: 7 min dist: 149.88064575195312
+2020-09-21 14:52:12,237 - pysero.log - DEBUG - Iteration: 8 min dist: 148.7427215576172
+2020-09-21 14:52:12,358 - pysero.log - DEBUG - Iteration: 9 min dist: 148.5792694091797
+2020-09-21 14:52:12,479 - pysero.log - DEBUG - Iteration: 10 min dist: 148.55972290039062
+2020-09-21 14:52:12,479 - pysero.log - INFO - Particle filter min dist: 29.711944580078125
+2020-09-21 14:52:12,479 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:13,997 - pysero.log - DEBUG - Assigned well A7 to plate reports
+2020-09-21 14:52:13,997 - pysero.log - INFO - Time to extract OD in A7: 4.749 s
+2020-09-21 14:52:14,696 - pysero.log - DEBUG - Time to save debug images: 0.699 s
+2020-09-21 14:52:14,778 - pysero.log - INFO - Extracting well: A8
+2020-09-21 14:52:14,778 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:16,559 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:16,708 - pysero.log - DEBUG - Iteration: 0 min dist: 176.06912231445312
+2020-09-21 14:52:16,829 - pysero.log - DEBUG - Iteration: 1 min dist: 175.01551818847656
+2020-09-21 14:52:16,953 - pysero.log - DEBUG - Iteration: 2 min dist: 414.52069091796875
+2020-09-21 14:52:17,072 - pysero.log - DEBUG - Iteration: 3 min dist: 295.19342041015625
+2020-09-21 14:52:17,190 - pysero.log - DEBUG - Iteration: 4 min dist: 133.72573852539062
+2020-09-21 14:52:17,308 - pysero.log - DEBUG - Iteration: 5 min dist: 137.0150909423828
+2020-09-21 14:52:17,427 - pysero.log - DEBUG - Iteration: 6 min dist: 124.17259979248047
+2020-09-21 14:52:17,544 - pysero.log - DEBUG - Iteration: 7 min dist: 120.75794982910156
+2020-09-21 14:52:17,666 - pysero.log - DEBUG - Iteration: 8 min dist: 120.61991882324219
+2020-09-21 14:52:17,802 - pysero.log - DEBUG - Iteration: 9 min dist: 120.65081787109375
+2020-09-21 14:52:17,802 - pysero.log - INFO - Particle filter min dist: 24.13016357421875
+2020-09-21 14:52:17,802 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:19,323 - pysero.log - DEBUG - Assigned well A8 to plate reports
+2020-09-21 14:52:19,324 - pysero.log - INFO - Time to extract OD in A8: 4.627 s
+2020-09-21 14:52:20,068 - pysero.log - DEBUG - Time to save debug images: 0.744 s
+2020-09-21 14:52:20,144 - pysero.log - INFO - Extracting well: A9
+2020-09-21 14:52:20,144 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:21,924 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:22,070 - pysero.log - DEBUG - Iteration: 0 min dist: 245.5831298828125
+2020-09-21 14:52:22,190 - pysero.log - DEBUG - Iteration: 1 min dist: 246.00369262695312
+2020-09-21 14:52:22,309 - pysero.log - DEBUG - Iteration: 2 min dist: 88.2481689453125
+2020-09-21 14:52:22,430 - pysero.log - DEBUG - Iteration: 3 min dist: 185.89308166503906
+2020-09-21 14:52:22,548 - pysero.log - DEBUG - Iteration: 4 min dist: 76.85171508789062
+2020-09-21 14:52:22,665 - pysero.log - DEBUG - Iteration: 5 min dist: 17.530622482299805
+2020-09-21 14:52:22,783 - pysero.log - DEBUG - Iteration: 6 min dist: 4.523824691772461
+2020-09-21 14:52:22,912 - pysero.log - DEBUG - Iteration: 7 min dist: 0.8363649845123291
+2020-09-21 14:52:23,033 - pysero.log - DEBUG - Iteration: 8 min dist: 0.472324937582016
+2020-09-21 14:52:23,150 - pysero.log - DEBUG - Iteration: 9 min dist: 0.4227048456668854
+2020-09-21 14:52:23,150 - pysero.log - INFO - Particle filter min dist: 0.08454096913337708
+2020-09-21 14:52:23,150 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:24,680 - pysero.log - DEBUG - Assigned well A9 to plate reports
+2020-09-21 14:52:24,680 - pysero.log - INFO - Time to extract OD in A9: 4.612 s
+2020-09-21 14:52:25,368 - pysero.log - DEBUG - Time to save debug images: 0.688 s
+2020-09-21 14:52:25,450 - pysero.log - INFO - Extracting well: A10
+2020-09-21 14:52:25,451 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:27,257 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:27,419 - pysero.log - DEBUG - Iteration: 0 min dist: 271.91607666015625
+2020-09-21 14:52:27,552 - pysero.log - DEBUG - Iteration: 1 min dist: 534.6708984375
+2020-09-21 14:52:27,689 - pysero.log - DEBUG - Iteration: 2 min dist: 619.1539916992188
+2020-09-21 14:52:27,826 - pysero.log - DEBUG - Iteration: 3 min dist: 163.53680419921875
+2020-09-21 14:52:27,959 - pysero.log - DEBUG - Iteration: 4 min dist: 93.98834228515625
+2020-09-21 14:52:28,100 - pysero.log - DEBUG - Iteration: 5 min dist: 42.72598648071289
+2020-09-21 14:52:28,235 - pysero.log - DEBUG - Iteration: 6 min dist: 12.036558151245117
+2020-09-21 14:52:28,376 - pysero.log - DEBUG - Iteration: 7 min dist: 8.073646545410156
+2020-09-21 14:52:28,515 - pysero.log - DEBUG - Iteration: 8 min dist: 6.6747002601623535
+2020-09-21 14:52:28,652 - pysero.log - DEBUG - Iteration: 9 min dist: 6.61037540435791
+2020-09-21 14:52:28,652 - pysero.log - INFO - Particle filter min dist: 1.322075080871582
+2020-09-21 14:52:28,652 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:30,222 - pysero.log - DEBUG - Assigned well A10 to plate reports
+2020-09-21 14:52:30,222 - pysero.log - INFO - Time to extract OD in A10: 4.854 s
+2020-09-21 14:52:30,958 - pysero.log - DEBUG - Time to save debug images: 0.736 s
+2020-09-21 14:52:31,045 - pysero.log - INFO - Extracting well: A11
+2020-09-21 14:52:31,045 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:32,862 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:33,020 - pysero.log - DEBUG - Iteration: 0 min dist: 79.96270751953125
+2020-09-21 14:52:33,154 - pysero.log - DEBUG - Iteration: 1 min dist: 688.4480590820312
+2020-09-21 14:52:33,290 - pysero.log - DEBUG - Iteration: 2 min dist: 143.04559326171875
+2020-09-21 14:52:33,429 - pysero.log - DEBUG - Iteration: 3 min dist: 136.53732299804688
+2020-09-21 14:52:33,557 - pysero.log - DEBUG - Iteration: 4 min dist: 43.09074783325195
+2020-09-21 14:52:33,695 - pysero.log - DEBUG - Iteration: 5 min dist: 19.706226348876953
+2020-09-21 14:52:33,816 - pysero.log - DEBUG - Iteration: 6 min dist: 5.969240188598633
+2020-09-21 14:52:33,932 - pysero.log - DEBUG - Iteration: 7 min dist: 1.920300006866455
+2020-09-21 14:52:34,050 - pysero.log - DEBUG - Iteration: 8 min dist: 1.610972285270691
+2020-09-21 14:52:34,177 - pysero.log - DEBUG - Iteration: 9 min dist: 1.5630557537078857
+2020-09-21 14:52:34,177 - pysero.log - INFO - Particle filter min dist: 0.31261115074157714
+2020-09-21 14:52:34,177 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:35,843 - pysero.log - DEBUG - Assigned well A11 to plate reports
+2020-09-21 14:52:35,843 - pysero.log - INFO - Time to extract OD in A11: 4.884 s
+2020-09-21 14:52:36,535 - pysero.log - DEBUG - Time to save debug images: 0.692 s
+2020-09-21 14:52:36,619 - pysero.log - INFO - Extracting well: A12
+2020-09-21 14:52:36,619 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:38,484 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:38,621 - pysero.log - DEBUG - Iteration: 0 min dist: 400.1248474121094
+2020-09-21 14:52:38,747 - pysero.log - DEBUG - Iteration: 1 min dist: 348.1719970703125
+2020-09-21 14:52:38,877 - pysero.log - DEBUG - Iteration: 2 min dist: 119.61518859863281
+2020-09-21 14:52:39,016 - pysero.log - DEBUG - Iteration: 3 min dist: 106.6114273071289
+2020-09-21 14:52:39,146 - pysero.log - DEBUG - Iteration: 4 min dist: 30.95598602294922
+2020-09-21 14:52:39,267 - pysero.log - DEBUG - Iteration: 5 min dist: 22.29308319091797
+2020-09-21 14:52:39,387 - pysero.log - DEBUG - Iteration: 6 min dist: 2.517064094543457
+2020-09-21 14:52:39,505 - pysero.log - DEBUG - Iteration: 7 min dist: 1.9498953819274902
+2020-09-21 14:52:39,623 - pysero.log - DEBUG - Iteration: 8 min dist: 1.4992619752883911
+2020-09-21 14:52:39,745 - pysero.log - DEBUG - Iteration: 9 min dist: 1.4773471355438232
+2020-09-21 14:52:39,745 - pysero.log - INFO - Particle filter min dist: 0.29546942710876467
+2020-09-21 14:52:39,745 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:41,267 - pysero.log - DEBUG - Assigned well A12 to plate reports
+2020-09-21 14:52:41,267 - pysero.log - INFO - Time to extract OD in A12: 4.732 s
+2020-09-21 14:52:41,952 - pysero.log - DEBUG - Time to save debug images: 0.684 s
+2020-09-21 14:52:42,029 - pysero.log - INFO - Extracting well: C1
+2020-09-21 14:52:42,030 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:43,810 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:43,962 - pysero.log - DEBUG - Iteration: 0 min dist: 66.42202758789062
+2020-09-21 14:52:44,087 - pysero.log - DEBUG - Iteration: 1 min dist: 140.9422607421875
+2020-09-21 14:52:44,212 - pysero.log - DEBUG - Iteration: 2 min dist: 328.7444763183594
+2020-09-21 14:52:44,338 - pysero.log - DEBUG - Iteration: 3 min dist: 117.47528076171875
+2020-09-21 14:52:44,459 - pysero.log - DEBUG - Iteration: 4 min dist: 80.88646697998047
+2020-09-21 14:52:44,582 - pysero.log - DEBUG - Iteration: 5 min dist: 47.51426315307617
+2020-09-21 14:52:44,704 - pysero.log - DEBUG - Iteration: 6 min dist: 35.8084716796875
+2020-09-21 14:52:44,822 - pysero.log - DEBUG - Iteration: 7 min dist: 35.876129150390625
+2020-09-21 14:52:44,823 - pysero.log - INFO - Particle filter min dist: 7.175225830078125
+2020-09-21 14:52:44,823 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:46,324 - pysero.log - DEBUG - Assigned well C1 to plate reports
+2020-09-21 14:52:46,324 - pysero.log - INFO - Time to extract OD in C1: 4.373 s
+2020-09-21 14:52:47,113 - pysero.log - DEBUG - Time to save debug images: 0.788 s
+2020-09-21 14:52:47,194 - pysero.log - INFO - Extracting well: C2
+2020-09-21 14:52:47,194 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:48,979 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:49,120 - pysero.log - DEBUG - Iteration: 0 min dist: 28.459976196289062
+2020-09-21 14:52:49,244 - pysero.log - DEBUG - Iteration: 1 min dist: 128.48410034179688
+2020-09-21 14:52:49,367 - pysero.log - DEBUG - Iteration: 2 min dist: 115.3700942993164
+2020-09-21 14:52:49,490 - pysero.log - DEBUG - Iteration: 3 min dist: 95.23675537109375
+2020-09-21 14:52:49,610 - pysero.log - DEBUG - Iteration: 4 min dist: 47.23549270629883
+2020-09-21 14:52:49,730 - pysero.log - DEBUG - Iteration: 5 min dist: 16.471498489379883
+2020-09-21 14:52:49,850 - pysero.log - DEBUG - Iteration: 6 min dist: 3.6606619358062744
+2020-09-21 14:52:49,967 - pysero.log - DEBUG - Iteration: 7 min dist: 1.824423909187317
+2020-09-21 14:52:50,086 - pysero.log - DEBUG - Iteration: 8 min dist: 1.2082048654556274
+2020-09-21 14:52:50,205 - pysero.log - DEBUG - Iteration: 9 min dist: 1.1598926782608032
+2020-09-21 14:52:50,205 - pysero.log - INFO - Particle filter min dist: 0.23197853565216064
+2020-09-21 14:52:50,205 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:51,687 - pysero.log - DEBUG - Assigned well C2 to plate reports
+2020-09-21 14:52:51,687 - pysero.log - INFO - Time to extract OD in C2: 4.574 s
+2020-09-21 14:52:52,374 - pysero.log - DEBUG - Time to save debug images: 0.687 s
+2020-09-21 14:52:52,458 - pysero.log - INFO - Extracting well: C3
+2020-09-21 14:52:52,459 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:54,235 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:54,395 - pysero.log - DEBUG - Iteration: 0 min dist: 290.81439208984375
+2020-09-21 14:52:54,529 - pysero.log - DEBUG - Iteration: 1 min dist: 316.61029052734375
+2020-09-21 14:52:54,666 - pysero.log - DEBUG - Iteration: 2 min dist: 552.13916015625
+2020-09-21 14:52:54,807 - pysero.log - DEBUG - Iteration: 3 min dist: 201.02725219726562
+2020-09-21 14:52:54,948 - pysero.log - DEBUG - Iteration: 4 min dist: 93.66567993164062
+2020-09-21 14:52:55,084 - pysero.log - DEBUG - Iteration: 5 min dist: 43.27283477783203
+2020-09-21 14:52:55,218 - pysero.log - DEBUG - Iteration: 6 min dist: 4.8335418701171875
+2020-09-21 14:52:55,350 - pysero.log - DEBUG - Iteration: 7 min dist: 3.7852954864501953
+2020-09-21 14:52:55,483 - pysero.log - DEBUG - Iteration: 8 min dist: 3.587941884994507
+2020-09-21 14:52:55,617 - pysero.log - DEBUG - Iteration: 9 min dist: 3.545543670654297
+2020-09-21 14:52:55,617 - pysero.log - INFO - Particle filter min dist: 0.7091087341308594
+2020-09-21 14:52:55,617 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:52:57,123 - pysero.log - DEBUG - Assigned well C3 to plate reports
+2020-09-21 14:52:57,123 - pysero.log - INFO - Time to extract OD in C3: 4.748 s
+2020-09-21 14:52:57,819 - pysero.log - DEBUG - Time to save debug images: 0.696 s
+2020-09-21 14:52:57,900 - pysero.log - INFO - Extracting well: C4
+2020-09-21 14:52:57,900 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:52:59,642 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:52:59,795 - pysero.log - DEBUG - Iteration: 0 min dist: 125.5400390625
+2020-09-21 14:52:59,923 - pysero.log - DEBUG - Iteration: 1 min dist: 383.3035888671875
+2020-09-21 14:53:00,054 - pysero.log - DEBUG - Iteration: 2 min dist: 541.22021484375
+2020-09-21 14:53:00,180 - pysero.log - DEBUG - Iteration: 3 min dist: 224.7006378173828
+2020-09-21 14:53:00,306 - pysero.log - DEBUG - Iteration: 4 min dist: 37.5450439453125
+2020-09-21 14:53:00,434 - pysero.log - DEBUG - Iteration: 5 min dist: 22.12775421142578
+2020-09-21 14:53:00,563 - pysero.log - DEBUG - Iteration: 6 min dist: 8.901893615722656
+2020-09-21 14:53:00,692 - pysero.log - DEBUG - Iteration: 7 min dist: 5.492415904998779
+2020-09-21 14:53:00,824 - pysero.log - DEBUG - Iteration: 8 min dist: 5.073392391204834
+2020-09-21 14:53:00,954 - pysero.log - DEBUG - Iteration: 9 min dist: 4.737244129180908
+2020-09-21 14:53:01,083 - pysero.log - DEBUG - Iteration: 10 min dist: 4.706981658935547
+2020-09-21 14:53:01,083 - pysero.log - INFO - Particle filter min dist: 0.9413963317871094
+2020-09-21 14:53:01,084 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:02,545 - pysero.log - DEBUG - Assigned well C4 to plate reports
+2020-09-21 14:53:02,545 - pysero.log - INFO - Time to extract OD in C4: 4.726 s
+2020-09-21 14:53:03,286 - pysero.log - DEBUG - Time to save debug images: 0.741 s
+2020-09-21 14:53:03,368 - pysero.log - INFO - Extracting well: C5
+2020-09-21 14:53:03,368 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:05,126 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:05,273 - pysero.log - DEBUG - Iteration: 0 min dist: 248.8829345703125
+2020-09-21 14:53:05,392 - pysero.log - DEBUG - Iteration: 1 min dist: 82.00756072998047
+2020-09-21 14:53:05,511 - pysero.log - DEBUG - Iteration: 2 min dist: 164.0955047607422
+2020-09-21 14:53:05,640 - pysero.log - DEBUG - Iteration: 3 min dist: 39.78818130493164
+2020-09-21 14:53:05,766 - pysero.log - DEBUG - Iteration: 4 min dist: 39.689544677734375
+2020-09-21 14:53:05,766 - pysero.log - INFO - Particle filter min dist: 7.937908935546875
+2020-09-21 14:53:05,766 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:07,255 - pysero.log - DEBUG - Assigned well C5 to plate reports
+2020-09-21 14:53:07,255 - pysero.log - INFO - Time to extract OD in C5: 3.970 s
+2020-09-21 14:53:07,924 - pysero.log - DEBUG - Time to save debug images: 0.668 s
+2020-09-21 14:53:08,006 - pysero.log - INFO - Extracting well: C6
+2020-09-21 14:53:08,006 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:09,769 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:09,910 - pysero.log - DEBUG - Iteration: 0 min dist: 100.07213592529297
+2020-09-21 14:53:10,031 - pysero.log - DEBUG - Iteration: 1 min dist: 283.0362548828125
+2020-09-21 14:53:10,154 - pysero.log - DEBUG - Iteration: 2 min dist: 414.03704833984375
+2020-09-21 14:53:10,276 - pysero.log - DEBUG - Iteration: 3 min dist: 90.58988189697266
+2020-09-21 14:53:10,395 - pysero.log - DEBUG - Iteration: 4 min dist: 34.56306838989258
+2020-09-21 14:53:10,513 - pysero.log - DEBUG - Iteration: 5 min dist: 14.987927436828613
+2020-09-21 14:53:10,629 - pysero.log - DEBUG - Iteration: 6 min dist: 2.2677114009857178
+2020-09-21 14:53:10,748 - pysero.log - DEBUG - Iteration: 7 min dist: 1.7873374223709106
+2020-09-21 14:53:10,866 - pysero.log - DEBUG - Iteration: 8 min dist: 1.7084717750549316
+2020-09-21 14:53:10,866 - pysero.log - INFO - Particle filter min dist: 0.34169435501098633
+2020-09-21 14:53:10,866 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:12,386 - pysero.log - DEBUG - Assigned well C6 to plate reports
+2020-09-21 14:53:12,386 - pysero.log - INFO - Time to extract OD in C6: 4.462 s
+2020-09-21 14:53:13,091 - pysero.log - DEBUG - Time to save debug images: 0.705 s
+2020-09-21 14:53:13,173 - pysero.log - INFO - Extracting well: C7
+2020-09-21 14:53:13,173 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:14,973 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:15,116 - pysero.log - DEBUG - Iteration: 0 min dist: 86.02320098876953
+2020-09-21 14:53:15,247 - pysero.log - DEBUG - Iteration: 1 min dist: 643.064208984375
+2020-09-21 14:53:15,381 - pysero.log - DEBUG - Iteration: 2 min dist: 157.70652770996094
+2020-09-21 14:53:15,510 - pysero.log - DEBUG - Iteration: 3 min dist: 133.42164611816406
+2020-09-21 14:53:15,635 - pysero.log - DEBUG - Iteration: 4 min dist: 40.788917541503906
+2020-09-21 14:53:15,759 - pysero.log - DEBUG - Iteration: 5 min dist: 36.81268310546875
+2020-09-21 14:53:15,881 - pysero.log - DEBUG - Iteration: 6 min dist: 33.53424835205078
+2020-09-21 14:53:16,002 - pysero.log - DEBUG - Iteration: 7 min dist: 33.48480987548828
+2020-09-21 14:53:16,002 - pysero.log - INFO - Particle filter min dist: 6.696961975097656
+2020-09-21 14:53:16,002 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:17,540 - pysero.log - DEBUG - Assigned well C7 to plate reports
+2020-09-21 14:53:17,540 - pysero.log - INFO - Time to extract OD in C7: 4.449 s
+2020-09-21 14:53:18,370 - pysero.log - DEBUG - Time to save debug images: 0.830 s
+2020-09-21 14:53:18,454 - pysero.log - INFO - Extracting well: C8
+2020-09-21 14:53:18,454 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:20,276 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:20,437 - pysero.log - DEBUG - Iteration: 0 min dist: 275.77117919921875
+2020-09-21 14:53:20,573 - pysero.log - DEBUG - Iteration: 1 min dist: 25.206031799316406
+2020-09-21 14:53:20,724 - pysero.log - DEBUG - Iteration: 2 min dist: 273.694091796875
+2020-09-21 14:53:20,870 - pysero.log - DEBUG - Iteration: 3 min dist: 78.36201477050781
+2020-09-21 14:53:21,014 - pysero.log - DEBUG - Iteration: 4 min dist: 53.56139373779297
+2020-09-21 14:53:21,159 - pysero.log - DEBUG - Iteration: 5 min dist: 2.370417833328247
+2020-09-21 14:53:21,328 - pysero.log - DEBUG - Iteration: 6 min dist: 0.5958043336868286
+2020-09-21 14:53:21,491 - pysero.log - DEBUG - Iteration: 7 min dist: 0.396888792514801
+2020-09-21 14:53:21,638 - pysero.log - DEBUG - Iteration: 8 min dist: 0.3314272463321686
+2020-09-21 14:53:21,639 - pysero.log - INFO - Particle filter min dist: 0.06628544926643372
+2020-09-21 14:53:21,639 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:23,149 - pysero.log - DEBUG - Assigned well C8 to plate reports
+2020-09-21 14:53:23,149 - pysero.log - INFO - Time to extract OD in C8: 4.778 s
+2020-09-21 14:53:23,853 - pysero.log - DEBUG - Time to save debug images: 0.704 s
+2020-09-21 14:53:23,935 - pysero.log - INFO - Extracting well: C9
+2020-09-21 14:53:23,935 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:25,775 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:25,924 - pysero.log - DEBUG - Iteration: 0 min dist: 85.17776489257812
+2020-09-21 14:53:26,060 - pysero.log - DEBUG - Iteration: 1 min dist: 304.36663818359375
+2020-09-21 14:53:26,195 - pysero.log - DEBUG - Iteration: 2 min dist: 173.0583038330078
+2020-09-21 14:53:26,335 - pysero.log - DEBUG - Iteration: 3 min dist: 91.44037628173828
+2020-09-21 14:53:26,476 - pysero.log - DEBUG - Iteration: 4 min dist: 58.46010971069336
+2020-09-21 14:53:26,650 - pysero.log - DEBUG - Iteration: 5 min dist: 22.497941970825195
+2020-09-21 14:53:26,785 - pysero.log - DEBUG - Iteration: 6 min dist: 4.34736967086792
+2020-09-21 14:53:26,910 - pysero.log - DEBUG - Iteration: 7 min dist: 1.4363998174667358
+2020-09-21 14:53:27,041 - pysero.log - DEBUG - Iteration: 8 min dist: 1.2936134338378906
+2020-09-21 14:53:27,170 - pysero.log - DEBUG - Iteration: 9 min dist: 1.2721716165542603
+2020-09-21 14:53:27,171 - pysero.log - INFO - Particle filter min dist: 0.25443432331085203
+2020-09-21 14:53:27,171 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:28,714 - pysero.log - DEBUG - Assigned well C9 to plate reports
+2020-09-21 14:53:28,714 - pysero.log - INFO - Time to extract OD in C9: 4.861 s
+2020-09-21 14:53:29,452 - pysero.log - DEBUG - Time to save debug images: 0.739 s
+2020-09-21 14:53:29,537 - pysero.log - INFO - Extracting well: C10
+2020-09-21 14:53:29,538 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:31,309 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:31,473 - pysero.log - DEBUG - Iteration: 0 min dist: 247.42721557617188
+2020-09-21 14:53:31,607 - pysero.log - DEBUG - Iteration: 1 min dist: 561.479736328125
+2020-09-21 14:53:31,738 - pysero.log - DEBUG - Iteration: 2 min dist: 342.963623046875
+2020-09-21 14:53:31,870 - pysero.log - DEBUG - Iteration: 3 min dist: 446.9901428222656
+2020-09-21 14:53:32,006 - pysero.log - DEBUG - Iteration: 4 min dist: 223.97946166992188
+2020-09-21 14:53:32,139 - pysero.log - DEBUG - Iteration: 5 min dist: 58.59228515625
+2020-09-21 14:53:32,275 - pysero.log - DEBUG - Iteration: 6 min dist: 19.918258666992188
+2020-09-21 14:53:32,411 - pysero.log - DEBUG - Iteration: 7 min dist: 10.403618812561035
+2020-09-21 14:53:32,548 - pysero.log - DEBUG - Iteration: 8 min dist: 9.470640182495117
+2020-09-21 14:53:32,685 - pysero.log - DEBUG - Iteration: 9 min dist: 9.281725883483887
+2020-09-21 14:53:32,824 - pysero.log - DEBUG - Iteration: 10 min dist: 9.26658821105957
+2020-09-21 14:53:32,824 - pysero.log - INFO - Particle filter min dist: 1.853317642211914
+2020-09-21 14:53:32,824 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:34,329 - pysero.log - DEBUG - Assigned well C10 to plate reports
+2020-09-21 14:53:34,329 - pysero.log - INFO - Time to extract OD in C10: 4.876 s
+2020-09-21 14:53:35,124 - pysero.log - DEBUG - Time to save debug images: 0.795 s
+2020-09-21 14:53:35,210 - pysero.log - INFO - Extracting well: C11
+2020-09-21 14:53:35,211 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:36,966 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:37,110 - pysero.log - DEBUG - Iteration: 0 min dist: 158.41244506835938
+2020-09-21 14:53:37,243 - pysero.log - DEBUG - Iteration: 1 min dist: 397.3998107910156
+2020-09-21 14:53:37,379 - pysero.log - DEBUG - Iteration: 2 min dist: 49.1778564453125
+2020-09-21 14:53:37,511 - pysero.log - DEBUG - Iteration: 3 min dist: 96.56607055664062
+2020-09-21 14:53:37,637 - pysero.log - DEBUG - Iteration: 4 min dist: 94.42091369628906
+2020-09-21 14:53:37,765 - pysero.log - DEBUG - Iteration: 5 min dist: 29.462665557861328
+2020-09-21 14:53:37,879 - pysero.log - DEBUG - Iteration: 6 min dist: 5.378290176391602
+2020-09-21 14:53:38,005 - pysero.log - DEBUG - Iteration: 7 min dist: 3.8355772495269775
+2020-09-21 14:53:38,131 - pysero.log - DEBUG - Iteration: 8 min dist: 3.3814001083374023
+2020-09-21 14:53:38,255 - pysero.log - DEBUG - Iteration: 9 min dist: 3.351701259613037
+2020-09-21 14:53:38,255 - pysero.log - INFO - Particle filter min dist: 0.6703402519226074
+2020-09-21 14:53:38,255 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:39,724 - pysero.log - DEBUG - Assigned well C11 to plate reports
+2020-09-21 14:53:39,724 - pysero.log - INFO - Time to extract OD in C11: 4.600 s
+2020-09-21 14:53:40,416 - pysero.log - DEBUG - Time to save debug images: 0.692 s
+2020-09-21 14:53:40,497 - pysero.log - INFO - Extracting well: C12
+2020-09-21 14:53:40,497 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:42,247 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:42,410 - pysero.log - DEBUG - Iteration: 0 min dist: 349.16339111328125
+2020-09-21 14:53:42,541 - pysero.log - DEBUG - Iteration: 1 min dist: 182.44403076171875
+2020-09-21 14:53:42,671 - pysero.log - DEBUG - Iteration: 2 min dist: 355.270263671875
+2020-09-21 14:53:42,800 - pysero.log - DEBUG - Iteration: 3 min dist: 267.6438293457031
+2020-09-21 14:53:42,939 - pysero.log - DEBUG - Iteration: 4 min dist: 35.186378479003906
+2020-09-21 14:53:43,068 - pysero.log - DEBUG - Iteration: 5 min dist: 9.17737102508545
+2020-09-21 14:53:43,195 - pysero.log - DEBUG - Iteration: 6 min dist: 4.166887283325195
+2020-09-21 14:53:43,322 - pysero.log - DEBUG - Iteration: 7 min dist: 2.4080374240875244
+2020-09-21 14:53:43,449 - pysero.log - DEBUG - Iteration: 8 min dist: 2.381124973297119
+2020-09-21 14:53:43,450 - pysero.log - INFO - Particle filter min dist: 0.4762249946594238
+2020-09-21 14:53:43,450 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:44,901 - pysero.log - DEBUG - Assigned well C12 to plate reports
+2020-09-21 14:53:44,901 - pysero.log - INFO - Time to extract OD in C12: 4.485 s
+2020-09-21 14:53:45,572 - pysero.log - DEBUG - Time to save debug images: 0.671 s
+2020-09-21 14:53:45,653 - pysero.log - INFO - Extracting well: E1
+2020-09-21 14:53:45,653 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:47,402 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:47,552 - pysero.log - DEBUG - Iteration: 0 min dist: 45.68488693237305
+2020-09-21 14:53:47,677 - pysero.log - DEBUG - Iteration: 1 min dist: 164.15411376953125
+2020-09-21 14:53:47,801 - pysero.log - DEBUG - Iteration: 2 min dist: 210.39097595214844
+2020-09-21 14:53:47,923 - pysero.log - DEBUG - Iteration: 3 min dist: 59.791847229003906
+2020-09-21 14:53:48,043 - pysero.log - DEBUG - Iteration: 4 min dist: 16.012958526611328
+2020-09-21 14:53:48,162 - pysero.log - DEBUG - Iteration: 5 min dist: 5.129693031311035
+2020-09-21 14:53:48,279 - pysero.log - DEBUG - Iteration: 6 min dist: 3.3277440071105957
+2020-09-21 14:53:48,396 - pysero.log - DEBUG - Iteration: 7 min dist: 1.6650408506393433
+2020-09-21 14:53:48,512 - pysero.log - DEBUG - Iteration: 8 min dist: 1.8084994554519653
+2020-09-21 14:53:48,632 - pysero.log - DEBUG - Iteration: 9 min dist: 1.7716554403305054
+2020-09-21 14:53:48,633 - pysero.log - INFO - Particle filter min dist: 0.3543310880661011
+2020-09-21 14:53:48,633 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:50,111 - pysero.log - DEBUG - Assigned well E1 to plate reports
+2020-09-21 14:53:50,112 - pysero.log - INFO - Time to extract OD in E1: 4.539 s
+2020-09-21 14:53:50,880 - pysero.log - DEBUG - Time to save debug images: 0.769 s
+2020-09-21 14:53:50,959 - pysero.log - INFO - Extracting well: E2
+2020-09-21 14:53:50,959 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:52,739 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:52,893 - pysero.log - DEBUG - Iteration: 0 min dist: 315.4425354003906
+2020-09-21 14:53:53,030 - pysero.log - DEBUG - Iteration: 1 min dist: 455.9381408691406
+2020-09-21 14:53:53,171 - pysero.log - DEBUG - Iteration: 2 min dist: 110.94939422607422
+2020-09-21 14:53:53,309 - pysero.log - DEBUG - Iteration: 3 min dist: 197.69186401367188
+2020-09-21 14:53:53,453 - pysero.log - DEBUG - Iteration: 4 min dist: 11.556598663330078
+2020-09-21 14:53:53,575 - pysero.log - DEBUG - Iteration: 5 min dist: 11.425341606140137
+2020-09-21 14:53:53,713 - pysero.log - DEBUG - Iteration: 6 min dist: 1.302828073501587
+2020-09-21 14:53:53,843 - pysero.log - DEBUG - Iteration: 7 min dist: 0.7524035573005676
+2020-09-21 14:53:53,974 - pysero.log - DEBUG - Iteration: 8 min dist: 0.5628718137741089
+2020-09-21 14:53:54,107 - pysero.log - DEBUG - Iteration: 9 min dist: 0.5526734590530396
+2020-09-21 14:53:54,107 - pysero.log - INFO - Particle filter min dist: 0.1105346918106079
+2020-09-21 14:53:54,107 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:53:55,660 - pysero.log - DEBUG - Assigned well E2 to plate reports
+2020-09-21 14:53:55,660 - pysero.log - INFO - Time to extract OD in E2: 4.779 s
+2020-09-21 14:53:56,363 - pysero.log - DEBUG - Time to save debug images: 0.703 s
+2020-09-21 14:53:56,461 - pysero.log - INFO - Extracting well: E3
+2020-09-21 14:53:56,462 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:53:58,292 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:53:58,451 - pysero.log - DEBUG - Iteration: 0 min dist: 274.9929504394531
+2020-09-21 14:53:58,588 - pysero.log - DEBUG - Iteration: 1 min dist: 91.6617202758789
+2020-09-21 14:53:58,728 - pysero.log - DEBUG - Iteration: 2 min dist: 182.7455596923828
+2020-09-21 14:53:58,867 - pysero.log - DEBUG - Iteration: 3 min dist: 38.1351432800293
+2020-09-21 14:53:59,004 - pysero.log - DEBUG - Iteration: 4 min dist: 53.17240905761719
+2020-09-21 14:53:59,141 - pysero.log - DEBUG - Iteration: 5 min dist: 19.437807083129883
+2020-09-21 14:53:59,275 - pysero.log - DEBUG - Iteration: 6 min dist: 4.0514349937438965
+2020-09-21 14:53:59,409 - pysero.log - DEBUG - Iteration: 7 min dist: 1.193215012550354
+2020-09-21 14:53:59,543 - pysero.log - DEBUG - Iteration: 8 min dist: 1.0324068069458008
+2020-09-21 14:53:59,681 - pysero.log - DEBUG - Iteration: 9 min dist: 1.0139930248260498
+2020-09-21 14:53:59,681 - pysero.log - INFO - Particle filter min dist: 0.20279860496520996
+2020-09-21 14:53:59,681 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:01,164 - pysero.log - DEBUG - Assigned well E3 to plate reports
+2020-09-21 14:54:01,164 - pysero.log - INFO - Time to extract OD in E3: 4.801 s
+2020-09-21 14:54:01,858 - pysero.log - DEBUG - Time to save debug images: 0.693 s
+2020-09-21 14:54:01,937 - pysero.log - INFO - Extracting well: E4
+2020-09-21 14:54:01,937 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:03,727 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:03,881 - pysero.log - DEBUG - Iteration: 0 min dist: 167.96261596679688
+2020-09-21 14:54:04,013 - pysero.log - DEBUG - Iteration: 1 min dist: 330.9454040527344
+2020-09-21 14:54:04,157 - pysero.log - DEBUG - Iteration: 2 min dist: 297.6863098144531
+2020-09-21 14:54:04,289 - pysero.log - DEBUG - Iteration: 3 min dist: 103.45889282226562
+2020-09-21 14:54:04,420 - pysero.log - DEBUG - Iteration: 4 min dist: 21.410179138183594
+2020-09-21 14:54:04,543 - pysero.log - DEBUG - Iteration: 5 min dist: 8.15089225769043
+2020-09-21 14:54:04,666 - pysero.log - DEBUG - Iteration: 6 min dist: 1.1890077590942383
+2020-09-21 14:54:04,799 - pysero.log - DEBUG - Iteration: 7 min dist: 0.46509334444999695
+2020-09-21 14:54:04,928 - pysero.log - DEBUG - Iteration: 8 min dist: 0.2170644849538803
+2020-09-21 14:54:05,061 - pysero.log - DEBUG - Iteration: 9 min dist: 0.2076469361782074
+2020-09-21 14:54:05,061 - pysero.log - INFO - Particle filter min dist: 0.04152938723564148
+2020-09-21 14:54:05,061 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:06,586 - pysero.log - DEBUG - Assigned well E4 to plate reports
+2020-09-21 14:54:06,586 - pysero.log - INFO - Time to extract OD in E4: 4.728 s
+2020-09-21 14:54:07,481 - pysero.log - DEBUG - Time to save debug images: 0.895 s
+2020-09-21 14:54:07,558 - pysero.log - INFO - Extracting well: E5
+2020-09-21 14:54:07,559 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:09,393 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:09,557 - pysero.log - DEBUG - Iteration: 0 min dist: 79.84698486328125
+2020-09-21 14:54:09,689 - pysero.log - DEBUG - Iteration: 1 min dist: 605.236328125
+2020-09-21 14:54:09,818 - pysero.log - DEBUG - Iteration: 2 min dist: 221.0538330078125
+2020-09-21 14:54:09,948 - pysero.log - DEBUG - Iteration: 3 min dist: 86.96365356445312
+2020-09-21 14:54:10,084 - pysero.log - DEBUG - Iteration: 4 min dist: 35.65821075439453
+2020-09-21 14:54:10,228 - pysero.log - DEBUG - Iteration: 5 min dist: 16.47755241394043
+2020-09-21 14:54:10,369 - pysero.log - DEBUG - Iteration: 6 min dist: 2.7975387573242188
+2020-09-21 14:54:10,509 - pysero.log - DEBUG - Iteration: 7 min dist: 0.9374330043792725
+2020-09-21 14:54:10,654 - pysero.log - DEBUG - Iteration: 8 min dist: 0.6867927312850952
+2020-09-21 14:54:10,796 - pysero.log - DEBUG - Iteration: 9 min dist: 0.6512436270713806
+2020-09-21 14:54:10,796 - pysero.log - INFO - Particle filter min dist: 0.13024872541427612
+2020-09-21 14:54:10,796 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:12,429 - pysero.log - DEBUG - Assigned well E5 to plate reports
+2020-09-21 14:54:12,429 - pysero.log - INFO - Time to extract OD in E5: 4.947 s
+2020-09-21 14:54:13,146 - pysero.log - DEBUG - Time to save debug images: 0.717 s
+2020-09-21 14:54:13,226 - pysero.log - INFO - Extracting well: E6
+2020-09-21 14:54:13,226 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:15,048 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:15,210 - pysero.log - DEBUG - Iteration: 0 min dist: 176.703369140625
+2020-09-21 14:54:15,350 - pysero.log - DEBUG - Iteration: 1 min dist: 331.3074035644531
+2020-09-21 14:54:15,487 - pysero.log - DEBUG - Iteration: 2 min dist: 162.36734008789062
+2020-09-21 14:54:15,621 - pysero.log - DEBUG - Iteration: 3 min dist: 113.14454650878906
+2020-09-21 14:54:15,762 - pysero.log - DEBUG - Iteration: 4 min dist: 61.2890510559082
+2020-09-21 14:54:15,905 - pysero.log - DEBUG - Iteration: 5 min dist: 3.855334997177124
+2020-09-21 14:54:16,054 - pysero.log - DEBUG - Iteration: 6 min dist: 2.7025105953216553
+2020-09-21 14:54:16,198 - pysero.log - DEBUG - Iteration: 7 min dist: 0.7649690508842468
+2020-09-21 14:54:16,339 - pysero.log - DEBUG - Iteration: 8 min dist: 0.7020072937011719
+2020-09-21 14:54:16,339 - pysero.log - INFO - Particle filter min dist: 0.14040145874023438
+2020-09-21 14:54:16,339 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:17,904 - pysero.log - DEBUG - Assigned well E6 to plate reports
+2020-09-21 14:54:17,904 - pysero.log - INFO - Time to extract OD in E6: 4.758 s
+2020-09-21 14:54:18,585 - pysero.log - DEBUG - Time to save debug images: 0.682 s
+2020-09-21 14:54:18,671 - pysero.log - INFO - Extracting well: E7
+2020-09-21 14:54:18,671 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:20,490 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:20,642 - pysero.log - DEBUG - Iteration: 0 min dist: 208.53126525878906
+2020-09-21 14:54:20,776 - pysero.log - DEBUG - Iteration: 1 min dist: 481.5897216796875
+2020-09-21 14:54:20,912 - pysero.log - DEBUG - Iteration: 2 min dist: 248.92965698242188
+2020-09-21 14:54:21,050 - pysero.log - DEBUG - Iteration: 3 min dist: 223.19151306152344
+2020-09-21 14:54:21,188 - pysero.log - DEBUG - Iteration: 4 min dist: 61.45196533203125
+2020-09-21 14:54:21,322 - pysero.log - DEBUG - Iteration: 5 min dist: 41.02972412109375
+2020-09-21 14:54:21,448 - pysero.log - DEBUG - Iteration: 6 min dist: 25.564144134521484
+2020-09-21 14:54:21,571 - pysero.log - DEBUG - Iteration: 7 min dist: 16.279922485351562
+2020-09-21 14:54:21,695 - pysero.log - DEBUG - Iteration: 8 min dist: 15.982160568237305
+2020-09-21 14:54:21,815 - pysero.log - DEBUG - Iteration: 9 min dist: 15.916114807128906
+2020-09-21 14:54:21,815 - pysero.log - INFO - Particle filter min dist: 3.1832229614257814
+2020-09-21 14:54:21,815 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:23,312 - pysero.log - DEBUG - Assigned well E7 to plate reports
+2020-09-21 14:54:23,312 - pysero.log - INFO - Time to extract OD in E7: 4.727 s
+2020-09-21 14:54:24,100 - pysero.log - DEBUG - Time to save debug images: 0.788 s
+2020-09-21 14:54:24,181 - pysero.log - INFO - Extracting well: E8
+2020-09-21 14:54:24,182 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:25,965 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:26,125 - pysero.log - DEBUG - Iteration: 0 min dist: 86.11377716064453
+2020-09-21 14:54:26,266 - pysero.log - DEBUG - Iteration: 1 min dist: 343.29058837890625
+2020-09-21 14:54:26,405 - pysero.log - DEBUG - Iteration: 2 min dist: 23.794172286987305
+2020-09-21 14:54:26,546 - pysero.log - DEBUG - Iteration: 3 min dist: 32.95808792114258
+2020-09-21 14:54:26,685 - pysero.log - DEBUG - Iteration: 4 min dist: 11.479496002197266
+2020-09-21 14:54:26,818 - pysero.log - DEBUG - Iteration: 5 min dist: 23.479412078857422
+2020-09-21 14:54:26,955 - pysero.log - DEBUG - Iteration: 6 min dist: 6.098194122314453
+2020-09-21 14:54:27,088 - pysero.log - DEBUG - Iteration: 7 min dist: 4.389931678771973
+2020-09-21 14:54:27,220 - pysero.log - DEBUG - Iteration: 8 min dist: 4.229551315307617
+2020-09-21 14:54:27,352 - pysero.log - DEBUG - Iteration: 9 min dist: 4.218411922454834
+2020-09-21 14:54:27,353 - pysero.log - INFO - Particle filter min dist: 0.8436823844909668
+2020-09-21 14:54:27,353 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:28,886 - pysero.log - DEBUG - Assigned well E8 to plate reports
+2020-09-21 14:54:28,886 - pysero.log - INFO - Time to extract OD in E8: 4.786 s
+2020-09-21 14:54:29,591 - pysero.log - DEBUG - Time to save debug images: 0.705 s
+2020-09-21 14:54:29,673 - pysero.log - INFO - Extracting well: E9
+2020-09-21 14:54:29,673 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:31,449 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:31,594 - pysero.log - DEBUG - Iteration: 0 min dist: 283.9494323730469
+2020-09-21 14:54:31,717 - pysero.log - DEBUG - Iteration: 1 min dist: 652.2369995117188
+2020-09-21 14:54:31,839 - pysero.log - DEBUG - Iteration: 2 min dist: 316.1360778808594
+2020-09-21 14:54:31,962 - pysero.log - DEBUG - Iteration: 3 min dist: 84.81603240966797
+2020-09-21 14:54:32,084 - pysero.log - DEBUG - Iteration: 4 min dist: 43.650264739990234
+2020-09-21 14:54:32,203 - pysero.log - DEBUG - Iteration: 5 min dist: 9.460744857788086
+2020-09-21 14:54:32,329 - pysero.log - DEBUG - Iteration: 6 min dist: 2.379545211791992
+2020-09-21 14:54:32,453 - pysero.log - DEBUG - Iteration: 7 min dist: 1.8916141986846924
+2020-09-21 14:54:32,571 - pysero.log - DEBUG - Iteration: 8 min dist: 1.5987693071365356
+2020-09-21 14:54:32,706 - pysero.log - DEBUG - Iteration: 9 min dist: 1.5497636795043945
+2020-09-21 14:54:32,706 - pysero.log - INFO - Particle filter min dist: 0.3099527359008789
+2020-09-21 14:54:32,706 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:34,199 - pysero.log - DEBUG - Assigned well E9 to plate reports
+2020-09-21 14:54:34,199 - pysero.log - INFO - Time to extract OD in E9: 4.608 s
+2020-09-21 14:54:34,883 - pysero.log - DEBUG - Time to save debug images: 0.683 s
+2020-09-21 14:54:34,971 - pysero.log - INFO - Extracting well: E10
+2020-09-21 14:54:34,971 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:36,750 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:36,904 - pysero.log - DEBUG - Iteration: 0 min dist: 232.16473388671875
+2020-09-21 14:54:37,037 - pysero.log - DEBUG - Iteration: 1 min dist: 319.4444580078125
+2020-09-21 14:54:37,170 - pysero.log - DEBUG - Iteration: 2 min dist: 242.63746643066406
+2020-09-21 14:54:37,303 - pysero.log - DEBUG - Iteration: 3 min dist: 111.11082458496094
+2020-09-21 14:54:37,442 - pysero.log - DEBUG - Iteration: 4 min dist: 87.20164489746094
+2020-09-21 14:54:37,580 - pysero.log - DEBUG - Iteration: 5 min dist: 28.49766731262207
+2020-09-21 14:54:37,726 - pysero.log - DEBUG - Iteration: 6 min dist: 3.6756484508514404
+2020-09-21 14:54:37,880 - pysero.log - DEBUG - Iteration: 7 min dist: 2.3111703395843506
+2020-09-21 14:54:38,024 - pysero.log - DEBUG - Iteration: 8 min dist: 2.272104024887085
+2020-09-21 14:54:38,024 - pysero.log - INFO - Particle filter min dist: 0.454420804977417
+2020-09-21 14:54:38,025 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:39,595 - pysero.log - DEBUG - Assigned well E10 to plate reports
+2020-09-21 14:54:39,595 - pysero.log - INFO - Time to extract OD in E10: 4.712 s
+2020-09-21 14:54:40,389 - pysero.log - DEBUG - Time to save debug images: 0.794 s
+2020-09-21 14:54:40,470 - pysero.log - INFO - Extracting well: E11
+2020-09-21 14:54:40,470 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:42,324 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:42,493 - pysero.log - DEBUG - Iteration: 0 min dist: 212.2527313232422
+2020-09-21 14:54:42,644 - pysero.log - DEBUG - Iteration: 1 min dist: 188.7427215576172
+2020-09-21 14:54:42,783 - pysero.log - DEBUG - Iteration: 2 min dist: 323.4825744628906
+2020-09-21 14:54:42,920 - pysero.log - DEBUG - Iteration: 3 min dist: 82.7038345336914
+2020-09-21 14:54:43,049 - pysero.log - DEBUG - Iteration: 4 min dist: 14.799132347106934
+2020-09-21 14:54:43,175 - pysero.log - DEBUG - Iteration: 5 min dist: 9.678888320922852
+2020-09-21 14:54:43,302 - pysero.log - DEBUG - Iteration: 6 min dist: 1.9443390369415283
+2020-09-21 14:54:43,423 - pysero.log - DEBUG - Iteration: 7 min dist: 1.4102904796600342
+2020-09-21 14:54:43,545 - pysero.log - DEBUG - Iteration: 8 min dist: 1.2623077630996704
+2020-09-21 14:54:43,667 - pysero.log - DEBUG - Iteration: 9 min dist: 1.2446197271347046
+2020-09-21 14:54:43,668 - pysero.log - INFO - Particle filter min dist: 0.2489239454269409
+2020-09-21 14:54:43,668 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:45,279 - pysero.log - DEBUG - Assigned well E11 to plate reports
+2020-09-21 14:54:45,279 - pysero.log - INFO - Time to extract OD in E11: 4.889 s
+2020-09-21 14:54:45,980 - pysero.log - DEBUG - Time to save debug images: 0.702 s
+2020-09-21 14:54:46,062 - pysero.log - INFO - Extracting well: E12
+2020-09-21 14:54:46,062 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:47,885 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:48,042 - pysero.log - DEBUG - Iteration: 0 min dist: 168.0003662109375
+2020-09-21 14:54:48,179 - pysero.log - DEBUG - Iteration: 1 min dist: 51.217342376708984
+2020-09-21 14:54:48,315 - pysero.log - DEBUG - Iteration: 2 min dist: 192.27574157714844
+2020-09-21 14:54:48,450 - pysero.log - DEBUG - Iteration: 3 min dist: 37.14513397216797
+2020-09-21 14:54:48,582 - pysero.log - DEBUG - Iteration: 4 min dist: 46.92204284667969
+2020-09-21 14:54:48,715 - pysero.log - DEBUG - Iteration: 5 min dist: 19.116527557373047
+2020-09-21 14:54:48,844 - pysero.log - DEBUG - Iteration: 6 min dist: 5.824189186096191
+2020-09-21 14:54:48,969 - pysero.log - DEBUG - Iteration: 7 min dist: 2.866487503051758
+2020-09-21 14:54:49,096 - pysero.log - DEBUG - Iteration: 8 min dist: 2.1353960037231445
+2020-09-21 14:54:49,223 - pysero.log - DEBUG - Iteration: 9 min dist: 1.894877314567566
+2020-09-21 14:54:49,353 - pysero.log - DEBUG - Iteration: 10 min dist: 1.8659356832504272
+2020-09-21 14:54:49,353 - pysero.log - INFO - Particle filter min dist: 0.37318713665008546
+2020-09-21 14:54:49,353 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:50,893 - pysero.log - DEBUG - Assigned well E12 to plate reports
+2020-09-21 14:54:50,893 - pysero.log - INFO - Time to extract OD in E12: 4.912 s
+2020-09-21 14:54:51,605 - pysero.log - DEBUG - Time to save debug images: 0.712 s
+2020-09-21 14:54:51,688 - pysero.log - INFO - Extracting well: G1
+2020-09-21 14:54:51,688 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:53,563 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:53,720 - pysero.log - DEBUG - Iteration: 0 min dist: 284.8924865722656
+2020-09-21 14:54:53,857 - pysero.log - DEBUG - Iteration: 1 min dist: 141.2520294189453
+2020-09-21 14:54:53,994 - pysero.log - DEBUG - Iteration: 2 min dist: 154.85855102539062
+2020-09-21 14:54:54,134 - pysero.log - DEBUG - Iteration: 3 min dist: 123.18359375
+2020-09-21 14:54:54,270 - pysero.log - DEBUG - Iteration: 4 min dist: 64.72917938232422
+2020-09-21 14:54:54,409 - pysero.log - DEBUG - Iteration: 5 min dist: 11.877511978149414
+2020-09-21 14:54:54,546 - pysero.log - DEBUG - Iteration: 6 min dist: 3.1765832901000977
+2020-09-21 14:54:54,684 - pysero.log - DEBUG - Iteration: 7 min dist: 1.493235468864441
+2020-09-21 14:54:54,822 - pysero.log - DEBUG - Iteration: 8 min dist: 1.4341760873794556
+2020-09-21 14:54:54,822 - pysero.log - INFO - Particle filter min dist: 0.28683521747589114
+2020-09-21 14:54:54,822 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:54:56,353 - pysero.log - DEBUG - Assigned well G1 to plate reports
+2020-09-21 14:54:56,353 - pysero.log - INFO - Time to extract OD in G1: 4.748 s
+2020-09-21 14:54:57,165 - pysero.log - DEBUG - Time to save debug images: 0.812 s
+2020-09-21 14:54:57,247 - pysero.log - INFO - Extracting well: G2
+2020-09-21 14:54:57,247 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:54:59,061 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:54:59,214 - pysero.log - DEBUG - Iteration: 0 min dist: 190.8555145263672
+2020-09-21 14:54:59,347 - pysero.log - DEBUG - Iteration: 1 min dist: 175.58853149414062
+2020-09-21 14:54:59,479 - pysero.log - DEBUG - Iteration: 2 min dist: 172.57896423339844
+2020-09-21 14:54:59,613 - pysero.log - DEBUG - Iteration: 3 min dist: 197.89154052734375
+2020-09-21 14:54:59,752 - pysero.log - DEBUG - Iteration: 4 min dist: 73.73909759521484
+2020-09-21 14:54:59,888 - pysero.log - DEBUG - Iteration: 5 min dist: 3.9322612285614014
+2020-09-21 14:55:00,019 - pysero.log - DEBUG - Iteration: 6 min dist: 2.5047855377197266
+2020-09-21 14:55:00,154 - pysero.log - DEBUG - Iteration: 7 min dist: 1.6250860691070557
+2020-09-21 14:55:00,288 - pysero.log - DEBUG - Iteration: 8 min dist: 1.5120205879211426
+2020-09-21 14:55:00,426 - pysero.log - DEBUG - Iteration: 9 min dist: 1.5126452445983887
+2020-09-21 14:55:00,426 - pysero.log - INFO - Particle filter min dist: 0.30252904891967775
+2020-09-21 14:55:00,426 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:01,997 - pysero.log - DEBUG - Assigned well G2 to plate reports
+2020-09-21 14:55:01,997 - pysero.log - INFO - Time to extract OD in G2: 4.831 s
+2020-09-21 14:55:02,680 - pysero.log - DEBUG - Time to save debug images: 0.684 s
+2020-09-21 14:55:02,760 - pysero.log - INFO - Extracting well: G3
+2020-09-21 14:55:02,761 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:04,548 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:04,696 - pysero.log - DEBUG - Iteration: 0 min dist: 319.08966064453125
+2020-09-21 14:55:04,826 - pysero.log - DEBUG - Iteration: 1 min dist: 164.74319458007812
+2020-09-21 14:55:04,953 - pysero.log - DEBUG - Iteration: 2 min dist: 377.1412658691406
+2020-09-21 14:55:05,081 - pysero.log - DEBUG - Iteration: 3 min dist: 231.36447143554688
+2020-09-21 14:55:05,206 - pysero.log - DEBUG - Iteration: 4 min dist: 49.678062438964844
+2020-09-21 14:55:05,331 - pysero.log - DEBUG - Iteration: 5 min dist: 17.338451385498047
+2020-09-21 14:55:05,454 - pysero.log - DEBUG - Iteration: 6 min dist: 4.076265811920166
+2020-09-21 14:55:05,577 - pysero.log - DEBUG - Iteration: 7 min dist: 2.059826612472534
+2020-09-21 14:55:05,699 - pysero.log - DEBUG - Iteration: 8 min dist: 1.8391386270523071
+2020-09-21 14:55:05,826 - pysero.log - DEBUG - Iteration: 9 min dist: 1.8355823755264282
+2020-09-21 14:55:05,826 - pysero.log - INFO - Particle filter min dist: 0.36711647510528567
+2020-09-21 14:55:05,826 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:07,343 - pysero.log - DEBUG - Assigned well G3 to plate reports
+2020-09-21 14:55:07,343 - pysero.log - INFO - Time to extract OD in G3: 4.663 s
+2020-09-21 14:55:08,021 - pysero.log - DEBUG - Time to save debug images: 0.677 s
+2020-09-21 14:55:08,104 - pysero.log - INFO - Extracting well: G4
+2020-09-21 14:55:08,104 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:09,891 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:10,052 - pysero.log - DEBUG - Iteration: 0 min dist: 312.2919921875
+2020-09-21 14:55:10,183 - pysero.log - DEBUG - Iteration: 1 min dist: 248.6600341796875
+2020-09-21 14:55:10,319 - pysero.log - DEBUG - Iteration: 2 min dist: 420.768310546875
+2020-09-21 14:55:10,456 - pysero.log - DEBUG - Iteration: 3 min dist: 92.18508911132812
+2020-09-21 14:55:10,593 - pysero.log - DEBUG - Iteration: 4 min dist: 41.43207550048828
+2020-09-21 14:55:10,731 - pysero.log - DEBUG - Iteration: 5 min dist: 11.746685981750488
+2020-09-21 14:55:10,866 - pysero.log - DEBUG - Iteration: 6 min dist: 5.094112873077393
+2020-09-21 14:55:11,000 - pysero.log - DEBUG - Iteration: 7 min dist: 1.8265137672424316
+2020-09-21 14:55:11,132 - pysero.log - DEBUG - Iteration: 8 min dist: 1.4494365453720093
+2020-09-21 14:55:11,262 - pysero.log - DEBUG - Iteration: 9 min dist: 1.4344327449798584
+2020-09-21 14:55:11,262 - pysero.log - INFO - Particle filter min dist: 0.28688654899597166
+2020-09-21 14:55:11,262 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:12,825 - pysero.log - DEBUG - Assigned well G4 to plate reports
+2020-09-21 14:55:12,825 - pysero.log - INFO - Time to extract OD in G4: 4.804 s
+2020-09-21 14:55:13,632 - pysero.log - DEBUG - Time to save debug images: 0.806 s
+2020-09-21 14:55:13,714 - pysero.log - INFO - Extracting well: G5
+2020-09-21 14:55:13,715 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:15,496 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:15,654 - pysero.log - DEBUG - Iteration: 0 min dist: 203.93597412109375
+2020-09-21 14:55:15,781 - pysero.log - DEBUG - Iteration: 1 min dist: 293.681884765625
+2020-09-21 14:55:15,908 - pysero.log - DEBUG - Iteration: 2 min dist: 242.07357788085938
+2020-09-21 14:55:16,039 - pysero.log - DEBUG - Iteration: 3 min dist: 128.35183715820312
+2020-09-21 14:55:16,174 - pysero.log - DEBUG - Iteration: 4 min dist: 38.24554443359375
+2020-09-21 14:55:16,309 - pysero.log - DEBUG - Iteration: 5 min dist: 14.844021797180176
+2020-09-21 14:55:16,444 - pysero.log - DEBUG - Iteration: 6 min dist: 4.475909233093262
+2020-09-21 14:55:16,572 - pysero.log - DEBUG - Iteration: 7 min dist: 1.6355375051498413
+2020-09-21 14:55:16,706 - pysero.log - DEBUG - Iteration: 8 min dist: 1.1699069738388062
+2020-09-21 14:55:16,846 - pysero.log - DEBUG - Iteration: 9 min dist: 1.0938491821289062
+2020-09-21 14:55:16,847 - pysero.log - INFO - Particle filter min dist: 0.21876983642578124
+2020-09-21 14:55:16,847 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:18,385 - pysero.log - DEBUG - Assigned well G5 to plate reports
+2020-09-21 14:55:18,385 - pysero.log - INFO - Time to extract OD in G5: 4.753 s
+2020-09-21 14:55:19,097 - pysero.log - DEBUG - Time to save debug images: 0.712 s
+2020-09-21 14:55:19,181 - pysero.log - INFO - Extracting well: G6
+2020-09-21 14:55:19,181 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:20,957 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:21,115 - pysero.log - DEBUG - Iteration: 0 min dist: 136.99095153808594
+2020-09-21 14:55:21,248 - pysero.log - DEBUG - Iteration: 1 min dist: 140.9322967529297
+2020-09-21 14:55:21,384 - pysero.log - DEBUG - Iteration: 2 min dist: 362.83868408203125
+2020-09-21 14:55:21,523 - pysero.log - DEBUG - Iteration: 3 min dist: 119.1269302368164
+2020-09-21 14:55:21,663 - pysero.log - DEBUG - Iteration: 4 min dist: 39.46436309814453
+2020-09-21 14:55:21,801 - pysero.log - DEBUG - Iteration: 5 min dist: 13.326313018798828
+2020-09-21 14:55:21,937 - pysero.log - DEBUG - Iteration: 6 min dist: 5.71464729309082
+2020-09-21 14:55:22,071 - pysero.log - DEBUG - Iteration: 7 min dist: 1.7032461166381836
+2020-09-21 14:55:22,204 - pysero.log - DEBUG - Iteration: 8 min dist: 1.672126293182373
+2020-09-21 14:55:22,204 - pysero.log - INFO - Particle filter min dist: 0.3344252586364746
+2020-09-21 14:55:22,205 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:23,800 - pysero.log - DEBUG - Assigned well G6 to plate reports
+2020-09-21 14:55:23,800 - pysero.log - INFO - Time to extract OD in G6: 4.703 s
+2020-09-21 14:55:24,508 - pysero.log - DEBUG - Time to save debug images: 0.708 s
+2020-09-21 14:55:24,589 - pysero.log - INFO - Extracting well: G7
+2020-09-21 14:55:24,589 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:26,392 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:26,546 - pysero.log - DEBUG - Iteration: 0 min dist: 167.74441528320312
+2020-09-21 14:55:26,666 - pysero.log - DEBUG - Iteration: 1 min dist: 101.86812591552734
+2020-09-21 14:55:26,790 - pysero.log - DEBUG - Iteration: 2 min dist: 66.9510269165039
+2020-09-21 14:55:26,915 - pysero.log - DEBUG - Iteration: 3 min dist: 240.03387451171875
+2020-09-21 14:55:27,042 - pysero.log - DEBUG - Iteration: 4 min dist: 104.65426635742188
+2020-09-21 14:55:27,168 - pysero.log - DEBUG - Iteration: 5 min dist: 2.892620325088501
+2020-09-21 14:55:27,297 - pysero.log - DEBUG - Iteration: 6 min dist: 2.577998638153076
+2020-09-21 14:55:27,417 - pysero.log - DEBUG - Iteration: 7 min dist: 0.8803931474685669
+2020-09-21 14:55:27,537 - pysero.log - DEBUG - Iteration: 8 min dist: 0.4907594323158264
+2020-09-21 14:55:27,658 - pysero.log - DEBUG - Iteration: 9 min dist: 0.45895856618881226
+2020-09-21 14:55:27,658 - pysero.log - INFO - Particle filter min dist: 0.09179171323776245
+2020-09-21 14:55:27,658 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:29,180 - pysero.log - DEBUG - Assigned well G7 to plate reports
+2020-09-21 14:55:29,180 - pysero.log - INFO - Time to extract OD in G7: 4.671 s
+2020-09-21 14:55:29,948 - pysero.log - DEBUG - Time to save debug images: 0.769 s
+2020-09-21 14:55:30,030 - pysero.log - INFO - Extracting well: G8
+2020-09-21 14:55:30,030 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:31,792 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:31,943 - pysero.log - DEBUG - Iteration: 0 min dist: 179.31651306152344
+2020-09-21 14:55:32,063 - pysero.log - DEBUG - Iteration: 1 min dist: 196.60597229003906
+2020-09-21 14:55:32,183 - pysero.log - DEBUG - Iteration: 2 min dist: 189.0924072265625
+2020-09-21 14:55:32,301 - pysero.log - DEBUG - Iteration: 3 min dist: 117.98310852050781
+2020-09-21 14:55:32,422 - pysero.log - DEBUG - Iteration: 4 min dist: 14.618036270141602
+2020-09-21 14:55:32,548 - pysero.log - DEBUG - Iteration: 5 min dist: 11.387542724609375
+2020-09-21 14:55:32,682 - pysero.log - DEBUG - Iteration: 6 min dist: 5.502748489379883
+2020-09-21 14:55:32,817 - pysero.log - DEBUG - Iteration: 7 min dist: 1.3309516906738281
+2020-09-21 14:55:32,944 - pysero.log - DEBUG - Iteration: 8 min dist: 1.0179493427276611
+2020-09-21 14:55:33,068 - pysero.log - DEBUG - Iteration: 9 min dist: 0.9996963739395142
+2020-09-21 14:55:33,068 - pysero.log - INFO - Particle filter min dist: 0.19993927478790283
+2020-09-21 14:55:33,068 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:34,582 - pysero.log - DEBUG - Assigned well G8 to plate reports
+2020-09-21 14:55:34,582 - pysero.log - INFO - Time to extract OD in G8: 4.633 s
+2020-09-21 14:55:35,248 - pysero.log - DEBUG - Time to save debug images: 0.666 s
+2020-09-21 14:55:35,334 - pysero.log - INFO - Extracting well: G9
+2020-09-21 14:55:35,334 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:37,111 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:37,273 - pysero.log - DEBUG - Iteration: 0 min dist: 80.44774627685547
+2020-09-21 14:55:37,408 - pysero.log - DEBUG - Iteration: 1 min dist: 119.31718444824219
+2020-09-21 14:55:37,543 - pysero.log - DEBUG - Iteration: 2 min dist: 439.7596740722656
+2020-09-21 14:55:37,679 - pysero.log - DEBUG - Iteration: 3 min dist: 138.67526245117188
+2020-09-21 14:55:37,826 - pysero.log - DEBUG - Iteration: 4 min dist: 38.391693115234375
+2020-09-21 14:55:37,966 - pysero.log - DEBUG - Iteration: 5 min dist: 10.830057144165039
+2020-09-21 14:55:38,103 - pysero.log - DEBUG - Iteration: 6 min dist: 4.6994476318359375
+2020-09-21 14:55:38,240 - pysero.log - DEBUG - Iteration: 7 min dist: 2.769832134246826
+2020-09-21 14:55:38,380 - pysero.log - DEBUG - Iteration: 8 min dist: 2.497148036956787
+2020-09-21 14:55:38,517 - pysero.log - DEBUG - Iteration: 9 min dist: 2.4901719093322754
+2020-09-21 14:55:38,517 - pysero.log - INFO - Particle filter min dist: 0.4980343818664551
+2020-09-21 14:55:38,517 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:40,018 - pysero.log - DEBUG - Assigned well G9 to plate reports
+2020-09-21 14:55:40,018 - pysero.log - INFO - Time to extract OD in G9: 4.770 s
+2020-09-21 14:55:40,729 - pysero.log - DEBUG - Time to save debug images: 0.711 s
+2020-09-21 14:55:40,815 - pysero.log - INFO - Extracting well: G10
+2020-09-21 14:55:40,815 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:42,545 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:42,704 - pysero.log - DEBUG - Iteration: 0 min dist: 172.4810791015625
+2020-09-21 14:55:42,841 - pysero.log - DEBUG - Iteration: 1 min dist: 353.2953186035156
+2020-09-21 14:55:42,976 - pysero.log - DEBUG - Iteration: 2 min dist: 296.04296875
+2020-09-21 14:55:43,110 - pysero.log - DEBUG - Iteration: 3 min dist: 76.9075698852539
+2020-09-21 14:55:43,246 - pysero.log - DEBUG - Iteration: 4 min dist: 50.17641067504883
+2020-09-21 14:55:43,383 - pysero.log - DEBUG - Iteration: 5 min dist: 9.1275634765625
+2020-09-21 14:55:43,518 - pysero.log - DEBUG - Iteration: 6 min dist: 3.658196449279785
+2020-09-21 14:55:43,652 - pysero.log - DEBUG - Iteration: 7 min dist: 2.539278507232666
+2020-09-21 14:55:43,786 - pysero.log - DEBUG - Iteration: 8 min dist: 2.087080717086792
+2020-09-21 14:55:43,919 - pysero.log - DEBUG - Iteration: 9 min dist: 2.098949909210205
+2020-09-21 14:55:43,919 - pysero.log - INFO - Particle filter min dist: 0.419789981842041
+2020-09-21 14:55:43,919 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:45,404 - pysero.log - DEBUG - Assigned well G10 to plate reports
+2020-09-21 14:55:45,405 - pysero.log - INFO - Time to extract OD in G10: 4.675 s
+2020-09-21 14:55:46,173 - pysero.log - DEBUG - Time to save debug images: 0.769 s
+2020-09-21 14:55:46,263 - pysero.log - INFO - Extracting well: G11
+2020-09-21 14:55:46,264 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:48,013 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:48,165 - pysero.log - DEBUG - Iteration: 0 min dist: 29.32661247253418
+2020-09-21 14:55:48,292 - pysero.log - DEBUG - Iteration: 1 min dist: 155.79518127441406
+2020-09-21 14:55:48,419 - pysero.log - DEBUG - Iteration: 2 min dist: 308.2073059082031
+2020-09-21 14:55:48,544 - pysero.log - DEBUG - Iteration: 3 min dist: 46.129241943359375
+2020-09-21 14:55:48,671 - pysero.log - DEBUG - Iteration: 4 min dist: 36.24702453613281
+2020-09-21 14:55:48,804 - pysero.log - DEBUG - Iteration: 5 min dist: 17.264326095581055
+2020-09-21 14:55:48,936 - pysero.log - DEBUG - Iteration: 6 min dist: 5.196171760559082
+2020-09-21 14:55:49,059 - pysero.log - DEBUG - Iteration: 7 min dist: 1.674576997756958
+2020-09-21 14:55:49,181 - pysero.log - DEBUG - Iteration: 8 min dist: 1.1957359313964844
+2020-09-21 14:55:49,303 - pysero.log - DEBUG - Iteration: 9 min dist: 1.1571061611175537
+2020-09-21 14:55:49,303 - pysero.log - INFO - Particle filter min dist: 0.23142123222351074
+2020-09-21 14:55:49,303 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:50,785 - pysero.log - DEBUG - Assigned well G11 to plate reports
+2020-09-21 14:55:50,785 - pysero.log - INFO - Time to extract OD in G11: 4.612 s
+2020-09-21 14:55:51,439 - pysero.log - DEBUG - Time to save debug images: 0.654 s
+2020-09-21 14:55:51,525 - pysero.log - INFO - Extracting well: G12
+2020-09-21 14:55:51,525 - pysero.log - DEBUG - Image max intensity: 255
+2020-09-21 14:55:53,271 - pysero.log - DEBUG - Particle filter, number of outliers: 0
+2020-09-21 14:55:53,429 - pysero.log - DEBUG - Iteration: 0 min dist: 190.5956573486328
+2020-09-21 14:55:53,551 - pysero.log - DEBUG - Iteration: 1 min dist: 381.04241943359375
+2020-09-21 14:55:53,683 - pysero.log - DEBUG - Iteration: 2 min dist: 100.8948974609375
+2020-09-21 14:55:53,810 - pysero.log - DEBUG - Iteration: 3 min dist: 186.34225463867188
+2020-09-21 14:55:53,933 - pysero.log - DEBUG - Iteration: 4 min dist: 94.48374938964844
+2020-09-21 14:55:54,056 - pysero.log - DEBUG - Iteration: 5 min dist: 8.742011070251465
+2020-09-21 14:55:54,177 - pysero.log - DEBUG - Iteration: 6 min dist: 1.3835101127624512
+2020-09-21 14:55:54,293 - pysero.log - DEBUG - Iteration: 7 min dist: 0.9544984698295593
+2020-09-21 14:55:54,410 - pysero.log - DEBUG - Iteration: 8 min dist: 0.8341691493988037
+2020-09-21 14:55:54,531 - pysero.log - DEBUG - Iteration: 9 min dist: 0.8021253347396851
+2020-09-21 14:55:54,531 - pysero.log - INFO - Particle filter min dist: 0.160425066947937
+2020-09-21 14:55:54,532 - pysero.log - INFO - Is registration ok: True
+2020-09-21 14:55:55,995 - pysero.log - DEBUG - Assigned well G12 to plate reports
+2020-09-21 14:55:55,996 - pysero.log - INFO - Time to extract OD in G12: 4.557 s
+2020-09-21 14:55:56,697 - pysero.log - DEBUG - Time to save debug images: 0.700 s
+2020-09-21 14:55:57,380 - pysero.log - DEBUG - Wrote OD plate report
+2020-09-21 14:55:57,571 - pysero.log - DEBUG - Wrote intensity plate report
+2020-09-21 14:55:57,766 - pysero.log - DEBUG - Wrote background plate report
