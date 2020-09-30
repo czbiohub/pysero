@@ -46,7 +46,7 @@ scn_scn_dirs = [r'/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_scienion
                 r'/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_scienion/2020-08-14-18-24-59-COVID_August14_OJassay_plate11_images',
                 ]
 
-output_dir = r'/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_scienion/OJ_plate3_9_7_8_4_10_11'
+output_dir = r'/Volumes/GoogleDrive/My Drive/ELISAarrayReader/images_scienion/OJ_plate3_9_7_8_4_10'
 fig_path = os.path.join(output_dir, 'pysero_plots')
 scn_psr_plate_ids = ['plate_3'] * 4 + ['plate_9'] * 3 + ['plate_7'] * 3 + ['plate_8'] * 4 + ['plate_4'] * 3 + ['plate_10'] * 3 + ['plate_11'] * 2
 scn_scn_plate_ids = ['plate_3', 'plate_9', 'plate_7', 'plate_8', 'plate_4', 'plate_10', 'plate_11']
@@ -338,63 +338,117 @@ def joint_plot(df_ori,
         sns.kdeplot(hue_df[x_col], ax=g.ax_marg_x, legend=False, bw=bw)
         sns.kdeplot(hue_df[y_col], ax=g.ax_marg_y, vertical=True, legend=False, bw=bw)
         sns.kdeplot(hue_df[x_col], hue_df[y_col], ax=g.ax_joint,
-                     legend=True, gridsize=400, bw=bw, n_levels=n_levels, shade=True, cmap=cmap)
+                     legend=False, gridsize=400, bw=bw, n_levels=n_levels, shade=True, cmap=cmap)
     xfit = np.linspace(xlim[0], xlim[1], 2)
     g.ax_joint.plot(xfit, xfit, linewidth=5, color='k', linestyle='--', alpha=0.5)
-    g.ax_joint.text(0.7 * xlim[1], 0.15 * ylim[1], 'Bias={:.3f}'.format(me), fontsize=16)  # add text
-    g.ax_joint.text(0.7 * xlim[1], 0.1 * ylim[1], 'Noise={:.3f}'.format(mae), fontsize=16)  # add text
+    g.ax_joint.text(0.7 * xlim[1], 0.15 * ylim[1], 'bias={:.3f}'.format(me), fontsize=16)  # add text
+    g.ax_joint.text(0.7 * xlim[1], 0.1 * ylim[1], 'variance={:.3f}'.format(mae), fontsize=16)  # add text
     plt.title(title)
-    plt.legend(hue_vals, loc='upper left')
+    # plt.legend(hue_vals, loc='upper left')
     plt.savefig(os.path.join(output_path, ''.join([output_fname, '.jpg'])),
                 dpi=300, bbox_inches='tight')
 
+def kde_plot(df_ori,
+            x_col,
+            y_col,
+            hue,
+            title,
+            ax=None,
+            bw='scott',
+            n_levels=60,
+            xlim=None,
+            ylim=None,
+            ):
+
+    # g = sns.JointGrid(x=x_col, y=y_col, data=df)
+    #                   # xlim=(0, 50), ylim=(0, 8))
+    # g = g.plot_joint(sns.kdeplot, cmap="Purples_d")
+    # g = g.plot_marginals(sns.kdeplot, color="m", shade=True)
+    df = df_ori.dropna(subset=[x_col, y_col])
+    diff_df = df[y_col] - df[x_col]
+    me = diff_df.mean()
+    mae = diff_df.abs().mean()
+    # cmap = sns.cubehelix_palette(as_cmap=True, dark=0, light=1, reverse=False)
+    cmap = 'Blues'
+    fig = plt.figure()
+    fig.set_size_inches((9, 9))
+
+    hue_vals = []
+    for hue_val, hue_df in df.groupby(hue):
+        hue_vals.append(hue_val)
+        sns.kdeplot(x=x_col, y=y_col, data=hue_df[[x_col, y_col]], ax=ax,
+                     legend=False, gridsize=400, bw=bw, n_levels=n_levels, shade=True, cmap=cmap)
+    xfit = np.linspace(xlim[0], xlim[1], 2)
+    ax.plot(xfit, xfit, linewidth=2, color='k', linestyle='--', alpha=0.5)
+    ax.text(0.4 * xlim[1], 0.15 * ylim[1], 'bias={:.3f}'.format(me), fontsize=12)  # add text
+    ax.text(0.4 * xlim[1], 0.08 * ylim[1], 'variance={:.3f}'.format(mae), fontsize=12)  # add text
+    plt.title(title)
+
 #%% pivot the dataframe for xy scatter plot
+sns.set_context("notebook")
 norm_antigen = 'xIgG Fc'
 # norm_antigen = None
 norm_group = 'plate'
 # norm_group = 'well'
 # norm_antigen = 'xkappa-biotin'
+norm_antigens = [None, 'xkappa-biotin', 'xIgG Fc', 'xIgG Fc']
+norm_groups = ['plate', 'plate', 'plate', 'well']
 limit = [0, 2.0]
 neg_limit = [0, 0.1]
-x_cols = ['plate_3', 'plate_7', 'plate_4']
-y_cols = ['plate_9', 'plate_8', 'plate_10']
+x_cols = ['plate_3 OD', 'plate_7 OD', 'plate_4 OD']
+y_cols = ['plate_9 OD', 'plate_8 OD', 'plate_10 OD']
 # for pipeline in stitched_pysero_df['pipeline'].unique():
+n_cols = len(norm_antigens)
+n_rows = len(x_cols)
+fig, ax = plt.subplots(n_rows, n_cols, figsize=(12, 9), sharex=False, sharey=False, squeeze=False,
+                       subplot_kw=dict(xlim=limit, ylim=limit))
+col_count = 0
 for pipeline in ['nautilus']:
-    df_norm = stitched_pysero_df.copy()
-    df_norm = slice_df(df_norm, 'keep', 'pipeline', [pipeline])
-    df_norm = normalize_od(df_norm, norm_antigen, group=norm_group)
-    suffix = pipeline
-    if norm_antigen is not None:
-        suffix = '_'.join([pipeline, norm_antigen, 'norm_per', norm_group])
+    for norm_antigen, norm_group in zip(norm_antigens, norm_groups):
+        df_norm = stitched_pysero_df.copy()
+        df_norm = slice_df(df_norm, 'keep', 'pipeline', [pipeline])
+        df_norm = normalize_od(df_norm, norm_antigen, group=norm_group)
+        suffix = pipeline
+        if norm_antigen is not None:
+            suffix = '_'.join([pipeline, norm_antigen, 'norm_per', norm_group])
+        df_norm['plate_id'] = df_norm['plate_id'] + ' OD'
+        pysero_df_pivot = pd.pivot_table(df_norm, values='OD',
+                                     index=['well_id', 'antigen_row', 'antigen_col', 'serum ID', 'secondary ID', 'secondary dilution',
+               'serum type', 'serum dilution', 'antigen', 'antigen type', 'pipeline'],
+                                     columns=['plate_id'])
+        pysero_df_pivot.reset_index(inplace=True)
 
-    pysero_df_pivot = pd.pivot_table(df_norm, values='OD',
-                                 index=['well_id', 'antigen_row', 'antigen_col', 'serum ID', 'secondary ID', 'secondary dilution',
-           'serum type', 'serum dilution', 'antigen', 'antigen type', 'pipeline'],
-                                 columns=['plate_id'])
-    pysero_df_pivot.reset_index(inplace=True)
-
-    antigen_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen type', ['Diagnostic'])
-    biotin_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen', ['xkappa-biotin'])
-    # biotin_OD_df = slice_df(biotin_OD_df, 'keep', 'antigen type', ['Fiducial'])
-    igg_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen', ['xIgG Fc'])
-    antigen_pos_df = slice_df(antigen_OD_df, 'keep', 'serum type', ['positive'])
-    antigen_neg_df = slice_df(antigen_OD_df, 'keep', 'serum type', ['negative'])
-
-    for x_col, y_col in zip(x_cols, y_cols):
-        # scatter_plot(pysero_df_pivot, x_col, y_col, fig_path, '_'.join(['OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
-        # scatter_plot(antigen_OD_df, x_col, y_col, 'antigen', fig_path,
-        #              '_'.join(['antigen_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
-        # scatter_plot(biotin_OD_df, x_col, y_col, 'biotin', fig_path,
-        #              '_'.join(['biotin_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
-        # scatter_plot(igg_OD_df, x_col, y_col, 'igg', fig_path,
-        #              '_'.join(['igg_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
-        joint_plot(antigen_OD_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
-                   '_'.join(['antigen_OD_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=limit, ylim=limit)
-        joint_plot(antigen_pos_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
-                   '_'.join(['antigen_pos_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=limit, ylim=limit)
-        joint_plot(antigen_neg_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
-                   '_'.join(['antigen_neg_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=neg_limit, ylim=neg_limit)
-    plt.close('all')
+        antigen_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen type', ['Diagnostic'])
+        biotin_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen', ['xkappa-biotin'])
+        # biotin_OD_df = slice_df(biotin_OD_df, 'keep', 'antigen type', ['Fiducial'])
+        igg_OD_df = slice_df(pysero_df_pivot, 'keep', 'antigen', ['xIgG Fc'])
+        antigen_pos_df = slice_df(antigen_OD_df, 'keep', 'serum type', ['positive'])
+        antigen_neg_df = slice_df(antigen_OD_df, 'keep', 'serum type', ['negative'])
+        row_count = 0
+        for x_col, y_col in zip(x_cols, y_cols):
+            # scatter_plot(pysero_df_pivot, x_col, y_col, fig_path, '_'.join(['OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
+            # scatter_plot(antigen_OD_df, x_col, y_col, 'antigen', fig_path,
+            #              '_'.join(['antigen_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
+            # scatter_plot(biotin_OD_df, x_col, y_col, 'biotin', fig_path,
+            #              '_'.join(['biotin_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
+            # scatter_plot(igg_OD_df, x_col, y_col, 'igg', fig_path,
+            #              '_'.join(['igg_OD_scatter', x_col, y_col, suffix]), xlim=limit, ylim=limit)
+            # joint_plot(antigen_OD_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
+            #            '_'.join(['antigen_OD_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=limit, ylim=limit)
+            # joint_plot(antigen_pos_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
+            #            '_'.join(['antigen_pos_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=limit, ylim=limit)
+            kde_plot(antigen_pos_df, x_col, y_col, 'antigen type', 'antigen', ax=ax[row_count][col_count],
+                     bw='scott', n_levels=60, xlim=limit, ylim=limit)
+            # joint_plot(antigen_neg_df, x_col, y_col, 'antigen type', 'antigen', fig_path,
+            #            '_'.join(['antigen_neg_joint', x_col, y_col, suffix]), bw='scott', n_levels=60, xlim=neg_limit, ylim=neg_limit)
+            row_count += 1
+        col_count += 1
+fig.tight_layout()
+fig.savefig(os.path.join(fig_path, ''.join(['antigen_pos_joint', '.png'])),
+                dpi=300, bbox_inches='tight')
+fig.savefig(os.path.join(fig_path, ''.join(['antigen_pos_joint', '.pdf'])),
+                dpi=300, bbox_inches='tight')
+plt.close('all')
 
 #%% 4PL fit
 slice_cols = ['pipeline', 'serum ID']
